@@ -1,0 +1,57 @@
+/* ---------------- FONTS ---------------- */
+
+/* ---------------- Open Sans ---------------- */
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSansRegular.eot");
+  src: url("../fonts/OpenSansRegular.eot") format("embedded-opentype"),
+    url("../fonts/OpenSansRegular.woff2") format("woff2"),
+    url("../fonts/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular.ttf") format("truetype"),
+    url("../fonts/OpenSansRegular.svg#OpenSansRegular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSansSemiBold.eot");
+  src: url("../fonts/OpenSansSemiBold.eot") format("embedded-opentype"),
+    url("../fonts/OpenSansSemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSansSemiBold.woff") format("woff"),
+    url("../fonts/OpenSansSemiBold.ttf") format("truetype"),
+    url("../fonts/OpenSansSemiBold.svg#OpenSansSemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSansBold.eot");
+  src: url("../fonts/OpenSansBold.eot") format("embedded-opentype"),
+    url("../fonts/OpenSansBold.woff2") format("woff2"),
+    url("../fonts/OpenSansBold.woff") format("woff"),
+    url("../fonts/OpenSansBold.ttf") format("truetype"),
+    url("../fonts/OpenSansBold.svg#OpenSansBold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------------- Raleway ---------------- */
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/RalewayBold.eot");
+  src: url("../fonts/RalewayBold.eot") format("embedded-opentype"),
+    url("../fonts/RalewayBold.woff2") format("woff2"),
+    url("../fonts/RalewayBold.woff") format("woff"),
+    url("../fonts/RalewayBold.ttf") format("truetype"),
+    url("../fonts/RalewayBold.svg#RalewayBold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

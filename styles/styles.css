@@ -1,0 +1,54 @@
+:root {
+  --font-family: "OpenSans", sans-serif;
+  --second-font-family: "Raleway", sans-serif;
+
+  --accent-color: #ff6c00;
+  --text-white-color: #ffffff;
+  --text-black-color: #303030;
+  --sub-text-color: #555555;
+  --text-gray-color: #9da4bd;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 1.67;
+
+  color: var(--text-black-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  color: currentColor;
+}
