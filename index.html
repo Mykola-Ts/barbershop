@@ -44,26 +44,28 @@
     <main>
       <section>
         <div class="container hero-container">
-          <ul class="hero-links-list">
-            <li>
-              <a
-                class="active-link"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                class="active-link"
-                href="https://www.youtube.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-links-wrap">
+            <ul class="hero-links-list list-links">
+              <li>
+                <a
+                  class="active-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  class="active-link"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-wrap">
             <p class="section-top-text">A hair salon for men in Kyiv</p>
             <h1 class="hero-title dark-theme-text">BarberShop</h1>
@@ -581,46 +583,96 @@
         </div>
       </section>
 
-      <div class="container section-wrap">
-        <section class="dark-theme-text">
-          <h2 class="section-title">Online-booking</h2>
-          <form>
-            <input type="text" />
-            <input type="tel" />
-            <textarea class="booking-message" cols="30" rows="10"></textarea>
-            <button class="button dark-theme-text" type="submit">Send</button>
-          </form>
-        </section>
+      <div class="section-wrap">
+        <div class="container section-wrap-container">
+          <section class="dark-theme-text booking">
+            <h2 class="section-title">Online-booking</h2>
+            <form class="booking-form">
+              <div class="booking-inputs-wrap">
+                <label class="booking-input-label">
+                  <span class="booking-message-label-text">Name*</span>
+                  <input
+                    class="booking-input"
+                    type="text"
+                    placeholder=""
+                    required
+                  />
+                </label>
+                <label class="booking-input-label">
+                  <span class="booking-message-label-text">Phone*</span>
+                  <input
+                    class="booking-input"
+                    type="tel"
+                    placeholder=""
+                    required
+                  />
+                </label>
+              </div>
+              <label class="booking-message-label">
+                <span class="booking-message-label-text">Message</span>
+                <textarea
+                  class="booking-message booking-input"
+                  cols="30"
+                  rows="10"
+                  placeholder=""
+                ></textarea>
+              </label>
+              <button class="button dark-theme-text" type="submit">Send</button>
+            </form>
+          </section>
 
-        <section class="contacts" id="contacts">
-          <h2 class="section-title dark-theme-text">Contacts</h2>
-          <address>
-            <ul>
-              <li>
-                <a
-                  href="https://maps.app.goo.gl/s27bV71qkcTqbbwT8"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >st. Vasilkivska, 7A<br />
-                  Kyiv, 08132</a
-                >
-              </li>
-              <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-              <li>
-                <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-              </li>
-            </ul>
-          </address>
-          <h3>Working hours</h3>
-          <p>Every day from 9:00 to 22:00</p>
-        </section>
+          <section class="contacts" id="contacts">
+            <h2 class="section-title contacts-title dark-theme-text">
+              Contacts
+            </h2>
+            <address class="contacts-address">
+              <ul>
+                <li class="contacts-address-item">
+                  <a
+                    class="contacts-location contacts-address-link"
+                    href="https://maps.app.goo.gl/s27bV71qkcTqbbwT8"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="contacts-address-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-location"></use>
+                    </svg>
+                    st. Vasilkivska, 7A<br />
+                    Kyiv, 08132</a
+                  >
+                </li>
+                <li class="contacts-address-item">
+                  <a class="contacts-address-link" href="tel:+380441111111">
+                    <svg class="contacts-address-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11</a
+                  >
+                </li>
+                <li class="contacts-address-item">
+                  <a
+                    class="contacts-address-link"
+                    href="mailto:barbershop@email.com"
+                  >
+                    <svg class="contacts-address-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <h3 class="section-top-text dark-theme-text">Working hours</h3>
+            <p>Every day from 9:00 to 22:00</p>
+          </section>
+        </div>
       </div>
     </main>
 
     <footer class="footer">
       <div class="container footer-container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
-        <ul class="footer-links-list">
+        <ul class="list-links">
           <li>
             <a
               class="active-link"
