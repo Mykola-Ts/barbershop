@@ -499,6 +499,9 @@ address {
 /* ---------------- BARBERS ---------------- */
 
 .barbers {
+  max-width: 1600px;
+  margin: 0 auto;
+
   background-color: var(--background-color-light);
 }
 
@@ -579,34 +582,22 @@ address {
 /* ---------------- BOOKING ---------------- */
 
 .section-wrap {
-  width: 1600px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  max-width: 1600px;
   margin: 0 auto;
 
   background-color: var(--background-color-dark);
-  background-image: url(../images/contacts-background.png);
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .section-wrap {
-    background-image: url(../images/contacts-background@2x.png);
-    background-size: contain;
-  }
-}
-
-.section-wrap-container {
-  display: flex;
-  gap: 30px;
 }
 
 .booking {
+  display: flex;
   flex-shrink: 0;
 
   width: calc((100% - 30px) / 2);
-  padding: 130px 15px 120px 0;
+  padding: 130px 15px 120px;
 
   font-size: 11px;
   font-weight: 600;
@@ -615,8 +606,15 @@ address {
   text-transform: uppercase;
 }
 
+.booking-container,
+.contacts-container {
+  width: calc((1200px - 30px) / 2);
+  margin-left: auto;
+}
+
 .booking-form {
   color: var(--text-gray-color-with-transparency);
+  margin-left: auto;
 }
 
 .booking-inputs-wrap {
@@ -680,14 +678,28 @@ address {
 /* ---------------- CONTACTS ---------------- */
 
 .contacts {
+  display: flex;
   flex-shrink: 0;
 
   width: calc((100% - 30px) / 2);
   padding: 130px 100px 120px;
+  margin-right: auto;
 
   letter-spacing: 0.02em;
 
   color: var(--text-gray-color);
+  background-image: url(../images/contacts-background.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../images/contacts-background@2x.png);
+  }
 }
 
 .contacts-title {
