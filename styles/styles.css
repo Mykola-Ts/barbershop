@@ -475,7 +475,7 @@ address {
   font-size: 42px;
   font-weight: 700;
   line-height: 1.36;
-  letter-spacing: 0.05;
+  letter-spacing: 0.05em;
 }
 
 .benefits-list-item-count::after {
@@ -602,7 +602,7 @@ address {
   font-size: 11px;
   font-weight: 600;
   line-height: 1.36;
-  letter-spacing: 0.01;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
 }
 
@@ -613,8 +613,9 @@ address {
 }
 
 .booking-form {
-  color: var(--text-gray-color-with-transparency);
   margin-left: auto;
+
+  color: var(--text-gray-color-with-transparency);
 }
 
 .booking-inputs-wrap {
@@ -657,8 +658,8 @@ address {
   outline: transparent;
 }
 
-.booking-input-label:has(.booking-input:focus),
-.booking-message-label:has(.booking-input:focus) {
+.booking-input-label:has(> .booking-input:focus),
+.booking-message-label:has(> .booking-input:focus) {
   color: var(--text-white-color);
 }
 

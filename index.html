@@ -14,6 +14,8 @@
     />
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+
+    <script type="module" src="./js/main.js"></script>
   </head>
 
   <body>
@@ -24,6 +26,7 @@
             <svg width="68" height="56">
               <use href="./images/icons.svg#icon-logo"></use></svg
           ></a>
+
           <ul class="nav-list">
             <li class="nav-item"><a href="#about">About</a></li>
             <li class="nav-item">
@@ -33,10 +36,11 @@
             <li class="nav-item"><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
+
         <a class="header-tel active-link" href="tel:+380441111111"
           >+38 044 111 11 11</a
         >
-        <button class="button dark-theme-text" type="button">
+        <button class="button dark-theme-text js-booking-btn" type="button">
           Online-booking
         </button>
       </div>
@@ -67,6 +71,7 @@
               </li>
             </ul>
           </div>
+
           <div class="hero-wrap">
             <p class="section-top-text">A hair salon for men in Kyiv</p>
             <h1 class="hero-title dark-theme-text">BarberShop</h1>
@@ -130,6 +135,7 @@
               </picture>
             </li>
           </ul>
+
           <div class="about-wrap">
             <p class="section-top-text">About</p>
             <h2 class="section-title">Best Barbershop in your city</h2>
@@ -144,7 +150,9 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button class="button" type="button">Online-booking</button>
+            <button class="button js-booking-btn" type="button">
+              Online-booking
+            </button>
           </div>
         </div>
       </section>
@@ -155,6 +163,7 @@
           <h2 class="section-title prices-title dark-theme-text">
             Services and prices
           </h2>
+
           <div class="prices-wrap">
             <ul class="prices-list">
               <li class="prices-list-item">
@@ -195,7 +204,10 @@
             </ul>
           </div>
 
-          <button class="button prices-btn dark-theme-text" type="button">
+          <button
+            class="button prices-btn dark-theme-text js-booking-btn"
+            type="button"
+          >
             online-booking
           </button>
         </div>
@@ -221,6 +233,7 @@
               <p>Gifts for regular customers</p>
             </li>
           </ul>
+
           <div class="benefits-wrap">
             <p class="section-top-text">Old traditional school</p>
             <h2 class="section-title">¿Why people come to us?</h2>
@@ -236,6 +249,7 @@
         <div class="container">
           <p class="section-top-text">For true enjoyers of the atmosphere</p>
           <h2 class="section-title barbers-title">Our barbers</h2>
+
           <ul class="barbers-list">
             <li>
               <div class="barbers-item-img-wrap">
@@ -262,8 +276,10 @@
                   />
                 </picture>
               </div>
+
               <h3 class="barbers-item-name">John Smith</h3>
               <p class="barbers-item-text">Extreme Barber</p>
+
               <ul class="barbers-social-list">
                 <li>
                   <a
@@ -341,8 +357,10 @@
                   />
                 </picture>
               </div>
+
               <h3 class="barbers-item-name">Michele Doe</h3>
               <p class="barbers-item-text">Extreme Barber</p>
+
               <ul class="barbers-social-list">
                 <li>
                   <a
@@ -420,8 +438,10 @@
                   />
                 </picture>
               </div>
+
               <h3 class="barbers-item-name">Alan Black</h3>
               <p class="barbers-item-text">Extreme Barber</p>
+
               <ul class="barbers-social-list">
                 <li>
                   <a
@@ -483,6 +503,7 @@
             In Latin, "barba" means "beard"
           </p>
           <h2 class="visually-hidden">Gallery</h2>
+
           <ul class="gallery-list">
             <li>
               <picture>
@@ -508,6 +529,7 @@
                 />
               </picture>
             </li>
+
             <li>
               <picture>
                 <source
@@ -532,6 +554,7 @@
                 />
               </picture>
             </li>
+
             <li>
               <picture>
                 <source
@@ -556,6 +579,7 @@
                 />
               </picture>
             </li>
+
             <li>
               <picture>
                 <source
@@ -586,8 +610,9 @@
 
       <div class="section-wrap">
         <section class="dark-theme-text booking">
-          <div class="booking-container">
+          <div class="booking-container js-booking-container">
             <h2 class="section-title">Online-booking</h2>
+
             <form class="booking-form">
               <div class="booking-inputs-wrap">
                 <label class="booking-input-label">
@@ -609,6 +634,7 @@
                   />
                 </label>
               </div>
+
               <label class="booking-message-label">
                 <span class="booking-message-label-text">Message</span>
                 <textarea
@@ -628,6 +654,7 @@
             <h2 class="section-title contacts-title dark-theme-text">
               Contacts
             </h2>
+
             <address class="contacts-address">
               <ul>
                 <li class="contacts-address-item">
@@ -644,6 +671,7 @@
                     Kyiv, 08132</a
                   >
                 </li>
+
                 <li class="contacts-address-item">
                   <a class="contacts-address-link" href="tel:+380441111111">
                     <svg class="contacts-address-icon" width="24" height="24">
@@ -652,6 +680,7 @@
                     +38 044 111 11 11</a
                   >
                 </li>
+
                 <li class="contacts-address-item">
                   <a
                     class="contacts-address-link"
@@ -675,6 +704,7 @@
     <footer class="footer">
       <div class="container footer-container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
+
         <ul class="list-links">
           <li>
             <a
@@ -685,6 +715,7 @@
               >Instagram</a
             >
           </li>
+
           <li>
             <a
               class="active-link"
