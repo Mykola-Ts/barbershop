@@ -21,8 +21,8 @@
 
 body {
   font-family: var(--font-family);
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: 1.63;
 
   color: var(--text-black-color);
 }
@@ -89,9 +89,9 @@ address {
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  padding-left: 31px;
+  padding-right: 31px;
   margin: 0 auto;
 }
 
@@ -99,7 +99,7 @@ address {
   margin-bottom: 20px;
 
   font-family: var(--second-font-family);
-  font-size: 42px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.05em;
 }
@@ -197,8 +197,8 @@ address {
   position: absolute;
 
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   font-size: 12px;
   font-weight: 600;
@@ -213,51 +213,52 @@ address {
   align-items: center;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 132px;
-
-  margin-right: auto;
-}
-
 .logo {
   width: 68px;
   height: 56px;
+
+  color: var(--text-white-color);
+}
+
+.logo-icon {
+  fill: currentColor;
 }
 
 .nav-list {
+  display: none;
+}
+
+.header-wrap {
+  display: none;
+}
+
+.mobile-menu-btn {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0px;
+  margin-left: auto;
+
+  color: var(--text-white-color);
+  background-color: transparent;
 }
 
-.nav-item {
-  transition: color var(--transition-duration) var(--transition-timing-function);
-}
-
-.nav-item:is(:hover, :focus) {
-  color: var(--accent-color);
-}
-
-.header-tel {
-  margin-right: 44px;
+.open-menu-icon {
+  fill: currentColor;
 }
 
 /* ---------------- HERO ---------------- */
 
 .hero-container {
-  display: flex;
-
-  padding-right: 0;
+  padding: 0px;
 }
 
 .hero-links-wrap {
-  display: flex;
-  align-items: flex-end;
-
-  width: 100px;
-  padding-bottom: 40px;
-  padding-left: 27px;
+  display: none;
 }
 
 .hero-links-list {
@@ -268,7 +269,7 @@ address {
 .hero-wrap {
   flex-grow: 1;
 
-  padding: 272px 100px 208px;
+  padding: 208px 32px 208px;
 
   color: var(--text-gray-color);
   background-color: var(--text-black-color);
@@ -276,7 +277,7 @@ address {
       rgba(25, 28, 38, 0.2),
       rgba(25, 28, 38, 0.2)
     ),
-    url(../images/hero-background.jpg);
+    url(../images/hero-background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -290,7 +291,7 @@ address {
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      url(../images/hero-background@2x.jpg);
+      url(../images/hero-background-mobile@2x.jpg);
   }
 }
 
@@ -298,38 +299,31 @@ address {
   margin-bottom: 20px;
 
   font-family: var(--second-font-family);
-  font-size: 72px;
+  font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.05em;
 }
 
 .hero-bottom-text {
-  max-width: 360px;
+  max-width: 320px;
 }
 
 /* ---------------- ABOUT ---------------- */
 
-.about-container {
-  display: flex;
-  gap: 30px;
-}
-
 .about-img-list {
-  display: flex;
-  gap: 30px;
-  flex-shrink: 0;
-}
-
-.about-wrap {
-  padding-right: 100px;
+  display: none;
 }
 
 .about-bottom-text {
   margin-bottom: 20px;
 }
 
+.about-bottom-text-item {
+  display: none;
+}
+
 .about-text {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   font-size: 14px;
   line-height: 1.86;

@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
 
     <script type="module" src="./js/main.js"></script>
   </head>
@@ -23,7 +24,7 @@
       <div class="container header-container">
         <nav class="nav">
           <a class="logo" href="./index.html">
-            <svg width="68" height="56">
+            <svg class="logo-icon" width="68" height="56">
               <use href="./images/icons.svg#icon-logo"></use></svg
           ></a>
 
@@ -37,11 +38,19 @@
           </ul>
         </nav>
 
-        <a class="header-tel active-link" href="tel:+380441111111"
-          >+38 044 111 11 11</a
-        >
-        <button class="button dark-theme-text js-booking-btn" type="button">
-          Online-booking
+        <div class="header-wrap">
+          <a class="header-tel active-link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="button dark-theme-text js-booking-btn" type="button">
+            Online-booking
+          </button>
+        </div>
+
+        <button type="button" class="mobile-menu-btn">
+          <svg class="open-menu-icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-open-mobile-menu"></use>
+          </svg>
         </button>
       </div>
     </header>
@@ -94,6 +103,7 @@
                     ./images/about-img-1@2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
@@ -101,6 +111,23 @@
                     ./images/about-img-1@2x.jpg 2x
                   "
                   type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/about-img-1-tablet.webp    1x,
+                    ./images/about-img-1-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/about-img-1-tablet.jpg    1x,
+                    ./images/about-img-1-tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
                 />
                 <img
                   src="./images/about-img-1.jpg"
@@ -110,6 +137,7 @@
                 />
               </picture>
             </li>
+
             <li>
               <picture>
                 <source
@@ -118,6 +146,7 @@
                     ./images/about-img-2@2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
@@ -125,6 +154,23 @@
                     ./images/about-img-2@2x.jpg 2x
                   "
                   type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/about-img-2-tablet.webp    1x,
+                    ./images/about-img-2-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/about-img-2-tablet.jpg    1x,
+                    ./images/about-img-2-tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
                 />
                 <img
                   src="./images/about-img-2.jpg"
@@ -138,10 +184,12 @@
 
           <div class="about-wrap">
             <p class="section-top-text">About</p>
-            <h2 class="section-title">Best Barbershop in your city</h2>
+            <h2 class="section-title about-wrap-title">
+              Best Barbershop in your city
+            </h2>
             <p class="section-bottom-text about-bottom-text">
               If you want to add more confidence to your image, you should
-              definitely visit us.
+              <span class="about-bottom-text-item">definitely</span> visit us.
             </p>
             <p class="about-text">
               We are a team that never stops at what has been achieved and are
@@ -150,7 +198,10 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button class="button js-booking-btn" type="button">
+            <button
+              class="button about-booking-btn js-booking-btn"
+              type="button"
+            >
               Online-booking
             </button>
           </div>
