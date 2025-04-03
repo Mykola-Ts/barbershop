@@ -1,8 +1,16 @@
-/* ----------------MIN-WIDTH: 360px---------------- */
+/* ----------------MIN-WIDTH: 400px---------------- */
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 400px) {
+  /* ---------------- HERO ---------------- */
+
   .hero-title {
     font-size: 48px;
+  }
+
+  /* ---------------- PRICES ---------------- */
+
+  .prices-list-item p {
+    flex-shrink: 0;
   }
 }
 
@@ -161,6 +169,31 @@
   .about-booking-btn {
     align-self: start;
   }
+
+  /* ---------------- PRICES ---------------- */
+
+  .prices-list {
+    padding: 40px 32px;
+  }
+
+  .prices-list-item {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  /* ---------------- BENEFITS ---------------- */
+
+  .benefits-title {
+    max-width: 448px;
+  }
+
+  .benefits-list {
+    width: 450px;
+  }
+
+  .benefits-list-item {
+    width: 210px;
+  }
 }
 
 /* ----------------MIN-WIDTH: 768px and MAX-WIDTH: 1199px---------------- */
@@ -181,6 +214,16 @@
   .about-img-list img {
     display: block;
     width: 100%;
+  }
+
+  /* ---------------- BENEFITS ---------------- */
+
+  .benefits-bottom-text {
+    max-width: 500px;
+  }
+
+  .benefits-list {
+    margin-left: auto;
   }
 }
 
@@ -264,5 +307,53 @@
 
   .about-bottom-text-item {
     display: inline;
+  }
+
+  /* ---------------- PRICES ---------------- */
+
+  .prices-wrap {
+    display: flex;
+    gap: 30px;
+  }
+
+  .prices-list {
+    width: calc((100% - 30px) / 2);
+    padding: 30px 20px;
+  }
+
+  .prices-list-item-mobile {
+    display: none;
+  }
+
+  .prices-list:last-child {
+    display: block;
+
+    background-image: linear-gradient(
+      180deg,
+      rgb(9, 11, 19),
+      rgba(9, 11, 19, 0.2) 100%
+    );
+  }
+
+  /* ---------------- BENEFITS ---------------- */
+
+  .benefits-container {
+    flex-direction: row;
+    gap: 130px;
+
+    padding-left: 84px;
+    padding-right: 116px;
+  }
+
+  .benefits-wrap {
+    order: 1;
+  }
+
+  .benefits-list {
+    width: 370px;
+  }
+
+  .benefits-list-item {
+    width: 170px;
   }
 }
