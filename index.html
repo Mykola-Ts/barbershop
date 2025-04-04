@@ -134,6 +134,7 @@
                   alt="Barber service"
                   width="270"
                   height="444"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -177,6 +178,7 @@
                   alt="Barber service"
                   width="270"
                   height="444"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -315,7 +317,7 @@
       </section>
 
       <section class="barbers section" id="barbers">
-        <div class="container">
+        <div class="container barbers-container">
           <p class="section-top-text">For true enjoyers of the atmosphere</p>
           <h2 class="section-title barbers-title">Our barbers</h2>
 
@@ -329,11 +331,43 @@
                       ./images/barbers-1@2x.webp 2x
                     "
                     type="image/webp"
+                    media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
                       ./images/barbers-1.jpg    1x,
                       ./images/barbers-1@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbers-1-tablet.webp    1x,
+                      ./images/barbers-1-tablet@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768x)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbers-1-tablet.jpg    1x,
+                      ./images/barbers-1-tablet@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbers-1-mobile.webp    1x,
+                      ./images/barbers-1-mobile@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbers-1-mobile.jpg    1x,
+                      ./images/barbers-1-mobile@2x.jpg 2x
                     "
                     type="image/jpeg"
                   />
@@ -342,6 +376,7 @@
                     alt="Our barber"
                     width="370"
                     height="346"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -410,11 +445,43 @@
                       ./images/barbers-2@2x.webp 2x
                     "
                     type="image/webp"
+                    media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
                       ./images/barbers-2.jpg    1x,
                       ./images/barbers-2@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbers-2-tablet.webp    1x,
+                      ./images/barbers-2-tablet@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768x)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbers-2-tablet.jpg    1x,
+                      ./images/barbers-2-tablet@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbers-2-mobile.webp    1x,
+                      ./images/barbers-2-mobile@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbers-2-mobile.jpg    1x,
+                      ./images/barbers-2-mobile@2x.jpg 2x
                     "
                     type="image/jpeg"
                   />
@@ -423,6 +490,7 @@
                     alt="Our barber"
                     width="370"
                     height="346"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -487,15 +555,47 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/barbers-1.webp    3x,
+                      ./images/barbers-3.webp    1x,
                       ./images/barbers-3@2x.webp 2x
                     "
                     type="image/webp"
+                    media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
                       ./images/barbers-3.jpg    1x,
                       ./images/barbers-3@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbers-3-tablet.webp    1x,
+                      ./images/barbers-3-tablet@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768x)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbers-3-tablet.jpg    1x,
+                      ./images/barbers-3-tablet@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbers-3-mobile.webp    1x,
+                      ./images/barbers-3-mobile@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbers-3-mobile.jpg    1x,
+                      ./images/barbers-3-mobile@2x.jpg 2x
                     "
                     type="image/jpeg"
                   />
@@ -504,6 +604,7 @@
                     alt="Our barber"
                     width="370"
                     height="346"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -574,7 +675,7 @@
           <h2 class="visually-hidden">Gallery</h2>
 
           <ul class="gallery-list">
-            <li>
+            <li class="gallery-list-item">
               <picture>
                 <source
                   srcset="
@@ -582,11 +683,43 @@
                     ./images/gallery-img-1@2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/gallery-img-1.jpg    1x,
                     ./images/gallery-img-1@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-1-tablet.webp    1x,
+                    ./images/gallery-img-1-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-1-tablet.jpg    1x,
+                    ./images/gallery-img-1-tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-1-mobile.webp    1x,
+                    ./images/gallery-img-1-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-1-mobile.jpg    1x,
+                    ./images/gallery-img-1-mobile@2x.jpg 2x
                   "
                   type="image/jpeg"
                 />
@@ -595,11 +728,12 @@
                   alt="Example of a barber's work"
                   width="270"
                   height="360"
+                  loading="lazy"
                 />
               </picture>
             </li>
 
-            <li>
+            <li class="gallery-list-item">
               <picture>
                 <source
                   srcset="
@@ -607,11 +741,43 @@
                     ./images/gallery-img-2@2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/gallery-img-2.jpg    1x,
                     ./images/gallery-img-2@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-2-tablet.webp    1x,
+                    ./images/gallery-img-2-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-2-tablet.jpg    1x,
+                    ./images/gallery-img-2-tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-2-mobile.webp    1x,
+                    ./images/gallery-img-2-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-2-mobile.jpg    1x,
+                    ./images/gallery-img-2-mobile@2x.jpg 2x
                   "
                   type="image/jpeg"
                 />
@@ -620,11 +786,12 @@
                   alt="Example of a barber's work"
                   width="270"
                   height="360"
+                  loading="lazy"
                 />
               </picture>
             </li>
 
-            <li>
+            <li class="gallery-list-item">
               <picture>
                 <source
                   srcset="
@@ -632,11 +799,43 @@
                     ./images/gallery-img-3@2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/gallery-img-3.jpg    1x,
                     ./images/gallery-img-3@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-3-tablet.webp    1x,
+                    ./images/gallery-img-3-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-3-tablet.jpg    1x,
+                    ./images/gallery-img-3-tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-3-mobile.webp    1x,
+                    ./images/gallery-img-3-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-3-mobile.jpg    1x,
+                    ./images/gallery-img-3-mobile@2x.jpg 2x
                   "
                   type="image/jpeg"
                 />
@@ -645,11 +844,12 @@
                   alt="Example of a barber's work"
                   width="270"
                   height="360"
+                  loading="lazy"
                 />
               </picture>
             </li>
 
-            <li>
+            <li class="gallery-list-item">
               <picture>
                 <source
                   srcset="
@@ -657,11 +857,43 @@
                     ./images/gallery-img-4@2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/gallery-img-4.jpg    1x,
                     ./images/gallery-img-4@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-4-tablet.webp    1x,
+                    ./images/gallery-img-4-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-4-tablet.jpg    1x,
+                    ./images/gallery-img-4-tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-4-mobile.webp    1x,
+                    ./images/gallery-img-4-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-4-mobile.jpg    1x,
+                    ./images/gallery-img-4-mobile@2x.jpg 2x
                   "
                   type="image/jpeg"
                 />
@@ -670,6 +902,7 @@
                   alt="Example of a barber's work"
                   width="270"
                   height="360"
+                  loading="lazy"
                 />
               </picture>
             </li>
