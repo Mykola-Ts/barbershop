@@ -12,9 +12,26 @@
   --text-gray-color-with-transparency: rgba(157, 164, 189, 0.4);
   --background-color-light: #f7f7f7;
   --background-color-dark: #191c26;
+  --backdrop-background-color: rgba(25, 28, 38, 0.2);
+  --background-linear-gradient: linear-gradient(
+    rgba(25, 28, 38, 0.2),
+    rgba(25, 28, 38, 0.2)
+  );
 
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --section-max-width: 1600px;
+  --container-width-mobile: 480px;
+  --container-width-tablet: 768px;
+  --container-width-desktop: 1200px;
+
+  --container-side-padding-mobile: 32px;
+  --container-side-padding-tablet: 40px;
+  --container-side-padding-desktop: 16px;
+  --container-vertical-padding-mobile: 84px;
+  --container-vertical-padding-tablet: 100px;
+  --container-vertical-padding-desktop: 120px;
 }
 
 /* ---------------- COMMON ---------------- */
@@ -88,14 +105,14 @@ address {
 
 .section {
   width: 100%;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: var(--container-vertical-padding-mobile);
+  padding-bottom: var(--container-vertical-padding-mobile);
 }
 
 .container {
   width: 100%;
-  padding-left: 31px;
-  padding-right: 31px;
+  padding-left: var(--container-side-padding-mobile);
+  padding-right: var(--container-side-padding-mobile);
   margin: 0 auto;
 }
 
@@ -232,6 +249,14 @@ address {
   display: none;
 }
 
+.nav-item {
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.nav-item:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+
 .header-wrap {
   display: none;
 }
@@ -251,7 +276,7 @@ address {
   background-color: transparent;
 }
 
-.open-menu-icon {
+.btn-menu-icon {
   fill: currentColor;
 }
 
@@ -265,22 +290,14 @@ address {
   display: none;
 }
 
-.hero-links-list {
-  transform: rotate(-90deg) translateY(100%);
-  transform-origin: bottom left;
-}
-
 .hero-wrap {
   flex-grow: 1;
 
-  padding: 208px 32px 208px;
+  padding: 208px var(--container-side-padding-mobile) 208px;
 
   color: var(--text-gray-color);
   background-color: var(--text-black-color);
-  background-image: linear-gradient(
-      rgba(25, 28, 38, 0.2),
-      rgba(25, 28, 38, 0.2)
-    ),
+  background-image: var(--background-linear-gradient),
     url(../images/hero-background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -289,10 +306,7 @@ address {
 
 @supports (background-image: url("../images/hero-background-mobile.webp")) {
   .hero-wrap {
-    background-image: linear-gradient(
-        rgba(25, 28, 38, 0.2),
-        rgba(25, 28, 38, 0.2)
-      ),
+    background-image: var(--background-linear-gradient),
       url("../images/hero-background-mobile.webp");
   }
 }
@@ -301,10 +315,7 @@ address {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-wrap {
-    background-image: linear-gradient(
-        rgba(25, 28, 38, 0.2),
-        rgba(25, 28, 38, 0.2)
-      ),
+    background-image: var(--background-linear-gradient),
       url(../images/hero-background-mobile@2x.jpg);
   }
 }
@@ -316,10 +327,7 @@ address {
     background-image: url("../images/hero-background-mobile@2x.webp")
   ) {
     .hero-wrap {
-      background-image: linear-gradient(
-          rgba(25, 28, 38, 0.2),
-          rgba(25, 28, 38, 0.2)
-        ),
+      background-image: var(--background-linear-gradient),
         url("../images/hero-background-mobile@2x.webp");
     }
   }
@@ -365,7 +373,7 @@ address {
 /* ---------------- PRICES ---------------- */
 
 .prices {
-  max-width: 1600px;
+  max-width: var(--section-max-width);
   margin: 0 auto;
 
   color: var(--text-gray-color);
@@ -527,7 +535,7 @@ address {
 /* ---------------- BARBERS ---------------- */
 
 .barbers {
-  max-width: 1600px;
+  max-width: var(--section-max-width);
   margin: 0 auto;
 
   background-color: var(--background-color-light);
@@ -617,6 +625,7 @@ address {
 
 .gallery-list-item {
   display: block;
+
   width: 100%;
 }
 
@@ -627,51 +636,37 @@ address {
 /* ---------------- BOOKING ---------------- */
 
 .section-wrap {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-
-  max-width: 1600px;
-  margin: 0 auto;
-
   background-color: var(--background-color-dark);
 }
 
 .booking {
-  display: flex;
-  flex-shrink: 0;
-
-  width: calc((100% - 30px) / 2);
-  padding: 130px 15px 120px;
+  padding: var(--container-vertical-padding-mobile)
+    var(--container-side-padding-mobile);
 
   font-size: 11px;
   font-weight: 600;
   line-height: 1.36;
   letter-spacing: 0.01em;
-  text-transform: uppercase;
 }
 
-.booking-container,
-.contacts-container {
-  width: calc((1200px - 30px) / 2);
-  margin-left: auto;
+.booking-title {
+  margin-bottom: 44px;
 }
 
 .booking-form {
   margin-left: auto;
+
+  text-transform: uppercase;
 
   color: var(--text-gray-color-with-transparency);
 }
 
 .booking-inputs-wrap {
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  gap: 44px;
 
   margin-bottom: 44px;
-}
-
-.booking-input-label {
-  width: calc((100% - 30px) / 2);
 }
 
 .booking-message-label-text {
@@ -724,12 +719,8 @@ address {
 /* ---------------- CONTACTS ---------------- */
 
 .contacts {
-  display: flex;
-  flex-shrink: 0;
-
-  width: calc((100% - 30px) / 2);
-  padding: 130px 100px 120px;
-  margin-right: auto;
+  padding: var(--container-vertical-padding-mobile)
+    var(--container-side-padding-mobile);
 
   letter-spacing: 0.02em;
 
@@ -753,7 +744,14 @@ address {
 }
 
 .contacts-address {
-  margin-bottom: 70px;
+  margin-bottom: 44px;
+}
+
+.contacts-address-item,
+.contacts-working-hours {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
 }
 
 .contacts-address-item:not(:last-child) {
@@ -790,8 +788,7 @@ address {
 /* ---------------- FOOTER ---------------- */
 
 .footer {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding: 44px 0;
 
   font-size: 11px;
   font-weight: 600;
@@ -801,9 +798,12 @@ address {
 
 .footer-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .footer-copyright {
+  letter-spacing: 0.2em;
   color: var(--text-gray-color);
 }
