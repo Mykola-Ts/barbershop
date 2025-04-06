@@ -48,6 +48,10 @@ body {
   color: var(--text-black-color);
 }
 
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -274,6 +278,12 @@ address {
 
   color: var(--text-white-color);
   background-color: transparent;
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.mobile-menu-btn:is(:hover, :focus) {
+  color: var(--accent-color);
 }
 
 .btn-menu-icon {
@@ -806,4 +816,116 @@ address {
 .footer-copyright {
   letter-spacing: 0.2em;
   color: var(--text-gray-color);
+}
+
+/* ---------------- MOBILE-MENU ---------------- */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+
+  width: 100vw;
+  height: 100vh;
+
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+
+  background-color: var(--backdrop-background-color);
+
+  transition: opacity var(--transition-duration)
+      var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function);
+}
+
+.mobile-menu.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mobile-menu-container {
+  position: relative;
+
+  transform: translateX(0);
+
+  width: 336px;
+  height: 100vh;
+  padding: 118px 40px;
+  margin-left: auto;
+
+  background-color: var(--text-white-color);
+
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.mobile-menu.is-hidden .mobile-menu-container {
+  transform: translateX(100%);
+}
+
+.mobile-menu-nav-list {
+  margin-bottom: 64px;
+
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.mobile-menu-nav-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.mobile-menu-tel {
+  display: block;
+
+  margin-bottom: 24px;
+
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.mobile-menu-booking-btn {
+  min-width: 194px;
+  margin-bottom: 64px;
+}
+
+.mobile-list-links-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.mobile-list-links-item:first-child {
+  margin-bottom: 24px;
+}
+
+.mobile-list-links-item:first-child:before {
+  content: "";
+
+  display: block;
+
+  width: 60px;
+  height: 1px;
+
+  background-color: currentColor;
+}
+
+.mobile-list-links-item:not(:first-child) {
+  margin-left: 100px;
+}
+
+.mobile-menu-btn-close {
+  position: absolute;
+  top: 60px;
+  right: 42px;
+
+  color: var(--text-black-color);
 }
