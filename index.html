@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
     <title>Barbershop</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -20,6 +21,7 @@
   </head>
 
   <body>
+    <!-- ---------------- HEADER ---------------- -->
     <header class="header dark-theme-text">
       <div class="container header-container">
         <nav class="nav">
@@ -42,9 +44,7 @@
           <a class="header-tel active-link" href="tel:+380441111111"
             >+38 044 111 11 11</a
           >
-          <button class="button dark-theme-text js-booking-btn" type="button">
-            Online-booking
-          </button>
+          <a href="#booking" class="button dark-theme-text">Online-booking</a>
         </div>
 
         <button type="button" class="mobile-menu-btn js-open-mobile-menu-btn">
@@ -56,6 +56,7 @@
     </header>
 
     <main>
+      <!-- ---------------- HERO ---------------- -->
       <section>
         <div class="container hero-container">
           <div class="hero-links-wrap">
@@ -92,6 +93,7 @@
         </div>
       </section>
 
+      <!-- ---------------- ABOUT ---------------- -->
       <section class="about section" id="about">
         <div class="container about-container">
           <ul class="about-img-list">
@@ -200,16 +202,14 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button
-              class="button about-booking-btn js-booking-btn"
-              type="button"
-            >
+            <a href="#booking" class="button about-booking-btn">
               Online-booking
-            </button>
+            </a>
           </div>
         </div>
       </section>
 
+      <!-- ---------------- PRICES ---------------- -->
       <section class="prices section" id="services">
         <div class="container">
           <p class="section-top-text">Spend your time with the best masters</p>
@@ -273,15 +273,13 @@
             </ul>
           </div>
 
-          <button
-            class="button prices-btn dark-theme-text js-booking-btn"
-            type="button"
-          >
-            online-booking
-          </button>
+          <a href="#booking" class="button prices-btn dark-theme-text">
+            Online-booking
+          </a>
         </div>
       </section>
 
+      <!-- ---------------- BENEFITS ---------------- -->
       <section class="section">
         <div class="container benefits-container">
           <div class="benefits-wrap">
@@ -316,6 +314,7 @@
         </div>
       </section>
 
+      <!-- ---------------- BARBERS ---------------- -->
       <section class="barbers section" id="barbers">
         <div class="container barbers-container">
           <p class="section-top-text">For true enjoyers of the atmosphere</p>
@@ -667,6 +666,7 @@
         </div>
       </section>
 
+      <!-- ---------------- GALLERY ---------------- -->
       <section class="section">
         <div class="container">
           <p class="section-top-text gallery-top-text">
@@ -911,16 +911,18 @@
       </section>
 
       <div class="section-wrap">
-        <section class="dark-theme-text booking">
+        <!-- ---------------- BOOKING ---------------- -->
+        <section id="booking" class="dark-theme-text booking">
           <div class="booking-container js-booking-container">
             <h2 class="section-title booking-title">Online-booking</h2>
 
-            <form class="booking-form">
+            <form class="booking-form js-booking-form">
               <div class="booking-inputs-wrap">
                 <label class="booking-input-label">
                   <span class="booking-message-label-text">Name*</span>
                   <input
                     class="booking-input"
+                    name="name"
                     type="text"
                     placeholder=""
                     required
@@ -931,6 +933,7 @@
                   <input
                     class="booking-input"
                     type="tel"
+                    name="phone"
                     placeholder=""
                     required
                   />
@@ -941,6 +944,7 @@
                 <span class="booking-message-label-text">Message</span>
                 <textarea
                   class="booking-message booking-input"
+                  name="message"
                   cols="30"
                   rows="10"
                   placeholder=""
@@ -957,6 +961,7 @@
           </div>
         </section>
 
+        <!-- ---------------- CONTACTS ---------------- -->
         <section class="contacts" id="contacts">
           <div class="contacts-container">
             <h2 class="section-title contacts-title dark-theme-text">
@@ -1016,6 +1021,7 @@
       </div>
     </main>
 
+    <!-- ---------------- FOOTER ---------------- -->
     <footer class="footer">
       <div class="container footer-container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
@@ -1044,7 +1050,8 @@
       </div>
     </footer>
 
-    <div class="mobile-menu is-hidden">
+    <!-- ---------------- MOBILE-MENU ---------------- -->
+    <div class="mobile-menu is-hidden js-mobile-menu">
       <div class="mobile-menu-container">
         <button
           type="button"
@@ -1055,7 +1062,7 @@
           </svg>
         </button>
 
-        <ul class="mobile-menu-nav-list">
+        <ul class="mobile-menu-nav-list js-mobile-menu-nav-list">
           <li class="nav-item mobile-menu-nav-item">
             <a href="#about">About</a>
           </li>
@@ -1076,12 +1083,12 @@
           >+38 044 111 11 11</a
         >
 
-        <button
-          class="button mobile-menu-booking-btn js-booking-btn"
-          type="button"
+        <a
+          href="#booking"
+          class="button mobile-menu-booking-btn js-mobile-menu-booking-btn"
         >
           Online-booking
-        </button>
+        </a>
 
         <ul class="mobile-list-links">
           <li class="mobile-list-links-item">
@@ -1103,6 +1110,25 @@
             >
           </li>
         </ul>
+      </div>
+    </div>
+
+    <!-- ---------------- MODAL-WINDOW ---------------- -->
+    <div class="modal-window is-hidden js-modal-window">
+      <div class="modal-window-container">
+        <button
+          type="button"
+          class="modal-window-btn-close js-close-modal-window-btn"
+        >
+          <svg class="btn-menu-icon" width="19" height="19">
+            <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+          </svg>
+        </button>
+
+        <p class="modal-window-text js-modal-window-text"></p>
+        <span class="modal-window-sub-text js-modal-window-sub-text"></span>
+
+        <button class="button js-modal-window-ok-btn" type="button">Ok</button>
       </div>
     </div>
   </body>

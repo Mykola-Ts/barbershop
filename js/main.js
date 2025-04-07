@@ -1,18 +1,10 @@
-import {
-  handlerClickBookingBtn,
-  handlerOpenMobileMenu,
-  handlerCloseMobileMenu,
-} from "./eventHandlers.js";
+import { handlerSubmitBookingForm } from "./eventHandlersBooking.js";
+import { handlerOpenMobileMenu } from "./eventHandlersMobileMenu.js";
 
 const selectors = {
-  bookingBtns: document.querySelectorAll(".js-booking-btn"),
   openMobileMenuBtn: document.querySelector(".js-open-mobile-menu-btn"),
-  closeMobileMenuBtn: document.querySelector(".js-close-mobile-menu-btn"),
+  bookingForm: document.querySelector(".js-booking-form"),
 };
 
-selectors.bookingBtns.forEach((btn) => {
-  btn.addEventListener("click", handlerClickBookingBtn);
-});
-
 selectors.openMobileMenuBtn.addEventListener("click", handlerOpenMobileMenu);
-selectors.closeMobileMenuBtn.addEventListener("click", handlerCloseMobileMenu);
+selectors.bookingForm.addEventListener("submit", handlerSubmitBookingForm);

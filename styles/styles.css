@@ -48,7 +48,8 @@ body {
   color: var(--text-black-color);
 }
 
-body.mobile-menu-open {
+body.mobile-menu-open,
+body.modal-window-open {
   overflow: hidden;
 }
 
@@ -157,6 +158,9 @@ address {
 }
 
 .button {
+  display: block;
+
+  width: fit-content;
   min-width: 160px;
   height: 40px;
   padding: 12px 20px;
@@ -167,6 +171,7 @@ address {
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0.09em;
+  text-align: center;
   text-transform: uppercase;
 
   color: var(--text-black-color);
@@ -216,6 +221,29 @@ address {
   color: var(--text-white-color);
 }
 
+.mobile-menu-btn,
+.modal-window-btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0px;
+  margin-left: auto;
+
+  color: var(--text-white-color);
+  background-color: transparent;
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.mobile-menu-btn:is(:hover, :focus),
+.modal-window-btn-close:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+
 /* ---------------- HEADER ---------------- */
 
 .header {
@@ -263,27 +291,6 @@ address {
 
 .header-wrap {
   display: none;
-}
-
-.mobile-menu-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 40px;
-  height: 40px;
-  border: none;
-  padding: 0px;
-  margin-left: auto;
-
-  color: var(--text-white-color);
-  background-color: transparent;
-
-  transition: color var(--transition-duration) var(--transition-timing-function);
-}
-
-.mobile-menu-btn:is(:hover, :focus) {
-  color: var(--accent-color);
 }
 
 .btn-menu-icon {
@@ -462,8 +469,6 @@ address {
 }
 
 .prices-btn {
-  display: block;
-
   margin: 0 auto;
 }
 
@@ -818,9 +823,10 @@ address {
   color: var(--text-gray-color);
 }
 
-/* ---------------- MOBILE-MENU ---------------- */
+/* ---------------- MOBILE-MENU + MODAL-WINDOW ---------------- */
 
-.mobile-menu {
+.mobile-menu,
+.modal-window {
   position: fixed;
   top: 0;
   right: 0;
@@ -840,7 +846,8 @@ address {
     visibility var(--transition-duration) var(--transition-timing-function);
 }
 
-.mobile-menu.is-hidden {
+.mobile-menu.is-hidden,
+.modal-window.is-hidden {
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
@@ -876,6 +883,12 @@ address {
 
 .mobile-menu-nav-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.mobile-menu-nav-item a {
+  display: block;
+
+  width: 100%;
 }
 
 .mobile-menu-tel {
@@ -928,4 +941,69 @@ address {
   right: 42px;
 
   color: var(--text-black-color);
+}
+
+.mobile-menu-btn-close,
+.modal-window-btn-close {
+  position: absolute;
+
+  color: var(--text-black-color);
+}
+
+.mobile-menu-btn-close {
+  top: 60px;
+  right: 42px;
+}
+
+/* ---------------- MODAL-WINDOW ---------------- */
+
+.modal-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+}
+
+.modal-window-container {
+  position: relative;
+  transform: scaleY(1);
+  transform-origin: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 400px;
+  min-height: 320px;
+  padding: 60px 32px;
+  border-radius: 18px;
+  border: 2px solid var(--text-black-color);
+
+  background-color: var(--text-white-color);
+
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.modal-window.is-hidden .modal-window-container {
+  transform: scaleY(0.1);
+}
+
+.modal-window-btn-close {
+  top: 20px;
+  right: 20px;
+}
+
+.modal-window-text {
+  text-align: center;
+  /* word-break: break-all; */
+}
+
+.modal-window-sub-text {
+  display: block;
+
+  margin-bottom: 20px;
 }
