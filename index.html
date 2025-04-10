@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/media.css" />
-
-    <script type="module" src="./js/main.js"></script>
   </head>
 
   <body>
@@ -922,6 +920,7 @@
                   <span class="booking-message-label-text">Name*</span>
                   <input
                     class="booking-input"
+                    id="name"
                     name="name"
                     type="text"
                     placeholder=""
@@ -933,6 +932,7 @@
                   <input
                     class="booking-input"
                     type="tel"
+                    id="phone"
                     name="phone"
                     placeholder=""
                     required
@@ -944,6 +944,7 @@
                 <span class="booking-message-label-text">Message</span>
                 <textarea
                   class="booking-message booking-input"
+                  id="message"
                   name="message"
                   cols="30"
                   rows="10"
@@ -1126,10 +1127,13 @@
         </button>
 
         <p class="modal-window-text js-modal-window-text"></p>
-        <span class="modal-window-sub-text js-modal-window-sub-text"></span>
 
         <button class="button js-modal-window-ok-btn" type="button">Ok</button>
       </div>
     </div>
+
+    <!-- ---------------- SCRIPTS ---------------- -->
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

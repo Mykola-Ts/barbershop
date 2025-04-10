@@ -731,6 +731,12 @@ address {
   resize: none;
 }
 
+.just-validate-error-label {
+  margin-top: 6px;
+
+  text-transform: initial;
+}
+
 /* ---------------- CONTACTS ---------------- */
 
 .contacts {
@@ -998,12 +1004,8 @@ address {
 }
 
 .modal-window-text {
-  text-align: center;
-  /* word-break: break-all; */
-}
-
-.modal-window-sub-text {
-  display: block;
-
   margin-bottom: 20px;
+
+  text-align: center;
+  white-space: pre-line;
 }

@@ -2,7 +2,6 @@ const selectors = {
   body: document.querySelector("body"),
   modalWindow: document.querySelector(".js-modal-window"),
   modalWindowText: document.querySelector(".js-modal-window-text"),
-  modalWindowSubText: document.querySelector(".js-modal-window-sub-text"),
   closeModalWindowBtn: document.querySelector(".js-close-modal-window-btn"),
   modalWindowOkBtn: document.querySelector(".js-modal-window-ok-btn"),
 };
@@ -23,8 +22,7 @@ export function handlerSubmitBookingForm(evt) {
   selectors.modalWindow.classList.remove("is-hidden");
   selectors.body.classList.add("modal-window-open");
 
-  selectors.modalWindowText.textContent = `Thank you for your request, ${name}! Our manager will contact you shortly at ${phone} to confirm the details.`;
-  selectors.modalWindowSubText.textContent = "Have a great day! 😉";
+  selectors.modalWindowText.textContent = `Thank you for your request, ${name}! \nOur manager will contact you shortly at ${phone} to confirm the details. \nHave a great day! 😉`;
 
   selectors.modalWindowOkBtn.addEventListener("click", handlerCloseModalWindow);
   selectors.closeModalWindowBtn.addEventListener(
