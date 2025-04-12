@@ -13,6 +13,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/media.css" />
@@ -81,12 +85,29 @@
           </div>
 
           <div class="hero-wrap">
-            <p class="section-top-text">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title dark-theme-text">BarberShop</h1>
-            <p class="section-bottom-text hero-bottom-text">
-              We are experts in trendy men’s haircuts. We work quickly,
-              carefully and with style.
-            </p>
+            <div class="hero-content">
+              <p class="section-top-text">A hair salon for men in Kyiv</p>
+              <h1 class="hero-title dark-theme-text">BarberShop</h1>
+              <p class="section-bottom-text hero-bottom-text">
+                We are experts in trendy men’s haircuts. We work quickly,
+                carefully and with style.
+              </p>
+            </div>
+
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-1"></div>
+                <div class="swiper-slide swiper-slide-2"></div>
+                <div class="swiper-slide swiper-slide-3"></div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+
+              <div class="swiper-buttons">
+                <div class="swiper-button-prev">Back</div>
+                <div class="swiper-button-next">Forward</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1134,6 +1155,7 @@
 
     <!-- ---------------- SCRIPTS ---------------- -->
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

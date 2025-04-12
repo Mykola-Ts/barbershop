@@ -248,6 +248,7 @@ address {
 
 .header {
   position: absolute;
+  z-index: 15;
 
   width: 100%;
   padding-top: 40px;
@@ -308,46 +309,20 @@ address {
 }
 
 .hero-wrap {
+  position: relative;
+
   flex-grow: 1;
 
   padding: 208px var(--container-side-padding-mobile) 208px;
 
   color: var(--text-gray-color);
-  background-color: var(--text-black-color);
-  background-image: var(--background-linear-gradient),
-    url(../images/hero-background-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
-@supports (background-image: url("../images/hero-background-mobile.webp")) {
-  .hero-wrap {
-    background-image: var(--background-linear-gradient),
-      url("../images/hero-background-mobile.webp");
-  }
-}
+.hero-content {
+  position: relative;
+  z-index: 5;
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-wrap {
-    background-image: var(--background-linear-gradient),
-      url(../images/hero-background-mobile@2x.jpg);
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  @supports (
-    background-image: url("../images/hero-background-mobile@2x.webp")
-  ) {
-    .hero-wrap {
-      background-image: var(--background-linear-gradient),
-        url("../images/hero-background-mobile@2x.webp");
-    }
-  }
+  width: fit-content;
 }
 
 .hero-title {
@@ -361,6 +336,72 @@ address {
 
 .hero-bottom-text {
   max-width: 320px;
+}
+
+.swiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+
+  color: var(--text-white-color);
+}
+
+.swiper-wrapper,
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-color: var(--text-black-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide-1 {
+  background-image: var(--background-linear-gradient),
+    url(../images/hero-background-mobile.jpg);
+}
+
+@supports (background-image: url("../images/hero-background-mobile.webp")) {
+  .swiper-slide-1 {
+    background-image: var(--background-linear-gradient),
+      url("../images/hero-background-mobile.webp");
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .swiper-slide-1 {
+    background-image: var(--background-linear-gradient),
+      url(../images/hero-background-mobile@2x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  @supports (
+    background-image: url("../images/hero-background-mobile@2x.webp")
+  ) {
+    .swiper-slide-1 {
+      background-image: var(--background-linear-gradient),
+        url("../images/hero-background-mobile@2x.webp");
+    }
+  }
+}
+
+.swiper-slide:not(:first-child),
+.swiper-pagination,
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
 }
 
 /* ---------------- ABOUT ---------------- */
@@ -395,7 +436,7 @@ address {
 
   color: var(--text-gray-color);
   background-color: #111319;
-  background-image: url(../images/prices-background.png);
+  background-image: url(../images/prices-background-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -405,7 +446,7 @@ address {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .prices {
-    background-image: url(../images/prices-background@2x.png);
+    background-image: url(../images/prices-background-mobile@2x.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -746,7 +787,7 @@ address {
   letter-spacing: 0.02em;
 
   color: var(--text-gray-color);
-  background-image: url(../images/contacts-background.png);
+  background-image: url(../images/contacts-background-mobile.png);
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -756,7 +797,7 @@ address {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../images/contacts-background@2x.png);
+    background-image: url(../images/contacts-background@2x-mobile.png);
   }
 }
 
