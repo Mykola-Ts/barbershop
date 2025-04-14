@@ -339,68 +339,6 @@ address {
 }
 
 .swiper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-
-  width: 100%;
-  height: 100%;
-
-  color: var(--text-white-color);
-}
-
-.swiper-wrapper,
-.swiper-slide {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  background-color: var(--text-black-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.swiper-slide-1 {
-  background-image: var(--background-linear-gradient),
-    url(../images/hero-background-mobile.jpg);
-}
-
-@supports (background-image: url("../images/hero-background-mobile.webp")) {
-  .swiper-slide-1 {
-    background-image: var(--background-linear-gradient),
-      url("../images/hero-background-mobile.webp");
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .swiper-slide-1 {
-    background-image: var(--background-linear-gradient),
-      url(../images/hero-background-mobile@2x.jpg);
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  @supports (
-    background-image: url("../images/hero-background-mobile@2x.webp")
-  ) {
-    .swiper-slide-1 {
-      background-image: var(--background-linear-gradient),
-        url("../images/hero-background-mobile@2x.webp");
-    }
-  }
-}
-
-.swiper-slide:not(:first-child),
-.swiper-pagination,
-.swiper-button-prev,
-.swiper-button-next {
   display: none;
 }
 
@@ -442,6 +380,12 @@ address {
   background-size: cover;
 }
 
+@supports (background-image: url("../images/prices-background-mobile.webp")) {
+  .prices {
+    background-image: url(../images/prices-background-mobile.webp);
+  }
+}
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -449,6 +393,18 @@ address {
     background-image: url(../images/prices-background-mobile@2x.png);
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  @supports (
+    background-image: url("../images/prices-background-mobile@2x.webp")
+  ) {
+    .prices {
+      background-image: url(../images/prices-background-mobile@2x.webp);
+    }
   }
 }
 
@@ -793,11 +749,29 @@ address {
   background-size: cover;
 }
 
+@supports (background-image: url("../images/contacts-background-mobile.webp")) {
+  .contacts {
+    background-image: url(../images/contacts-background-mobile.webp);
+  }
+}
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .contacts {
     background-image: url(../images/contacts-background@2x-mobile.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  @supports (
+    background-image: url("../images/contacts-background@2x-mobile.webp")
+  ) {
+    .contacts {
+      background-image: url(../images/contacts-background@2x-mobile.webp);
+    }
   }
 }
 

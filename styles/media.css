@@ -27,6 +27,46 @@
 /* ----------------MAX-WIDTH: 767px---------------- */
 
 @media screen and (max-width: 767px) {
+  /* ---------------- HERO ---------------- */
+
+  .hero-wrap {
+    background-color: var(--text-black-color);
+    background-image: var(--background-linear-gradient),
+      url(../images/hero-background-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @supports (background-image: url("../images/hero-background-mobile.webp")) {
+    .hero-wrap {
+      background-image: var(--background-linear-gradient),
+        url("../images/hero-background-mobile.webp");
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: var(--background-linear-gradient),
+        url(../images/hero-background-mobile@2x.jpg);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @supports (
+      background-image: url("../images/hero-background-mobile@2x.webp")
+    ) {
+      .hero-wrap {
+        background-image: var(--background-linear-gradient),
+          url("../images/hero-background-mobile@2x.webp");
+      }
+    }
+  }
+
   /* ---------------- ABOUT ---------------- */
 
   .about-img-list {
@@ -159,8 +199,31 @@
     padding: 272px 100px 238px;
   }
 
-  .swiper-wrapper .swiper-slide {
+  .swiper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
     display: block;
+
+    width: 100%;
+    height: 100%;
+
+    color: var(--text-white-color);
+  }
+
+  .swiper-wrapper,
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    background-color: var(--text-black-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .swiper-slide-1 {
@@ -277,7 +340,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
 
     width: fit-content;
     height: fit-content;
@@ -293,7 +356,7 @@
     justify-content: end;
 
     width: 18px;
-    height: 8px;
+    height: 10px;
 
     color: currentColor;
     background-color: transparent;
@@ -406,11 +469,29 @@
     background-image: url(../images/prices-background-tablet.png);
   }
 
+  @supports (background-image: url("../images/prices-background-tablet.webp")) {
+    .prices {
+      background-image: url(../images/prices-background-tablet.webp);
+    }
+  }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .prices {
       background-image: url(../images/prices-background-tablet@2x.png);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @supports (
+      background-image: url("../images/prices-background-tablet@2x.webp")
+    ) {
+      .prices {
+        background-image: url(../images/prices-background-tablet@2x.webp);
+      }
     }
   }
 
@@ -473,11 +554,31 @@
     background-image: url(../images/contacts-background-tablet.png);
   }
 
+  @supports (
+    background-image: url("../images/contacts-background-tablet.webp")
+  ) {
+    .contacts {
+      background-image: url(../images/contacts-background-tablet.webp);
+    }
+  }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .contacts {
       background-image: url(../images/contacts-background@2x-tablet.png);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @supports (
+      background-image: url("../images/contacts-background@2x-tablet.webp")
+    ) {
+      .contacts {
+        background-image: url(../images/contacts-background@2x-tablet.webp);
+      }
     }
   }
 
@@ -731,11 +832,27 @@
     background-image: url(../images/prices-background.png);
   }
 
+  @supports (background-image: url("../images/prices-background.webp")) {
+    .prices {
+      background-image: url(../images/prices-background.webp);
+    }
+  }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .prices {
       background-image: url(../images/prices-background@2x.png);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @supports (background-image: url("../images/prices-background@2x.webp")) {
+      .prices {
+        background-image: url(../images/prices-background@2x.webp);
+      }
     }
   }
 
@@ -836,11 +953,27 @@
     background-image: url(../images/contacts-background.png);
   }
 
+  @supports (background-image: url("../images/contacts-background.webp")) {
+    .contacts {
+      background-image: url(../images/contacts-background.webp);
+    }
+  }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .contacts {
       background-image: url(../images/contacts-background@2x.png);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @supports (background-image: url("../images/contacts-background@2x.webp")) {
+      .contacts {
+        background-image: url(../images/contacts-background@2x.webp);
+      }
     }
   }
 

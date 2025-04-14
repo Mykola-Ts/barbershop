@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BarberShop is a modern men’s hair salon in Kyiv. We offer stylish haircuts, beard grooming, and high-quality service in a trendy atmosphere."
+    />
     <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
     <title>Barbershop</title>
 
@@ -16,6 +20,7 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      media="(min-width: 768px)"
     />
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
@@ -23,33 +28,43 @@
   </head>
 
   <body>
-    <!-- ---------------- HEADER ---------------- -->
+    <!-- HEADER  -->
     <header class="header dark-theme-text">
       <div class="container header-container">
         <nav class="nav">
-          <a class="logo" href="./index.html">
+          <a href="./index.html" aria-label="Site logo" class="logo">
             <svg class="logo-icon" width="68" height="56">
               <use href="./images/icons.svg#icon-logo"></use></svg
           ></a>
 
           <ul class="nav-list">
-            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item">
+              <a href="#about">About</a>
+            </li>
             <li class="nav-item">
               <a href="#services">Services and prices</a>
             </li>
-            <li class="nav-item"><a href="#barbers">Barbers</a></li>
-            <li class="nav-item"><a href="#contacts">Contacts</a></li>
+            <li class="nav-item">
+              <a href="#barbers">Barbers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts">Contacts</a>
+            </li>
           </ul>
         </nav>
 
         <div class="header-wrap">
-          <a class="header-tel active-link" href="tel:+380441111111"
+          <a href="tel:+380441111111" class="header-tel active-link"
             >+38 044 111 11 11</a
           >
           <a href="#booking" class="button dark-theme-text">Online-booking</a>
         </div>
 
-        <button type="button" class="mobile-menu-btn js-open-mobile-menu-btn">
+        <button
+          type="button"
+          class="mobile-menu-btn js-open-mobile-menu-btn"
+          aria-label="Open mobile menu"
+        >
           <svg class="btn-menu-icon" width="24" height="16">
             <use href="./images/icons.svg#icon-open-mobile-menu"></use>
           </svg>
@@ -58,26 +73,26 @@
     </header>
 
     <main>
-      <!-- ---------------- HERO ---------------- -->
+      <!-- HERO -->
       <section>
         <div class="container hero-container">
           <div class="hero-links-wrap">
             <ul class="hero-links-list list-links">
               <li>
                 <a
-                  class="active-link"
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="active-link"
                   >Instagram</a
                 >
               </li>
               <li>
                 <a
-                  class="active-link"
                   href="https://www.youtube.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="active-link"
                   >Youtube</a
                 >
               </li>
@@ -112,7 +127,7 @@
         </div>
       </section>
 
-      <!-- ---------------- ABOUT ---------------- -->
+      <!-- ABOUT -->
       <section class="about section" id="about">
         <div class="container about-container">
           <ul class="about-img-list">
@@ -228,7 +243,7 @@
         </div>
       </section>
 
-      <!-- ---------------- PRICES ---------------- -->
+      <!-- PRICES -->
       <section class="prices section" id="services">
         <div class="container">
           <p class="section-top-text">Spend your time with the best masters</p>
@@ -298,7 +313,7 @@
         </div>
       </section>
 
-      <!-- ---------------- BENEFITS ---------------- -->
+      <!-- BENEFITS -->
       <section class="section">
         <div class="container benefits-container">
           <div class="benefits-wrap">
@@ -333,7 +348,7 @@
         </div>
       </section>
 
-      <!-- ---------------- BARBERS ---------------- -->
+      <!-- BARBERS -->
       <section class="barbers section" id="barbers">
         <div class="container barbers-container">
           <p class="section-top-text">For true enjoyers of the atmosphere</p>
@@ -405,10 +420,11 @@
               <ul class="barbers-social-list">
                 <li>
                   <a
-                    class="barbers-social-link"
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label="Instagram profile of a barber"
+                    class="barbers-social-link"
                   >
                     <svg class="barbers-social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -417,10 +433,11 @@
                 </li>
                 <li>
                   <a
-                    class="barbers-social-link"
                     href="https://twitter.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label="Twitter profile of a barber"
+                    class="barbers-social-link"
                   >
                     <svg class="barbers-social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
@@ -429,10 +446,11 @@
                 </li>
                 <li>
                   <a
-                    class="barbers-social-link"
                     href="https://www.facebook.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label="Facebook profile of a barber"
+                    class="barbers-social-link"
                   >
                     <svg class="barbers-social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
@@ -441,10 +459,11 @@
                 </li>
                 <li>
                   <a
-                    class="barbers-social-link"
                     href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label="Linkedin profile of a barber"
+                    class="barbers-social-link"
                   >
                     <svg class="barbers-social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
@@ -519,10 +538,11 @@
               <ul class="barbers-social-list">
                 <li>
                   <a
-                    class="barbers-social-link"
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label="Instagram profile of a barber"
+                    class="barbers-social-link"
                   >
                     <svg class="barbers-social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -531,10 +551,11 @@
                 </li>
                 <li>
                   <a
-                    class="barbers-social-link"
                     href="https://twitter.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label="Twitter profile of a barber"
+                    class="barbers-social-link"
                   >
                     <svg class="barbers-social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
@@ -543,10 +564,11 @@
                 </li>
                 <li>
                   <a
-                    class="barbers-social-link"
                     href="https://www.facebook.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label="Facebook profile of a barber"
+                    class="barbers-social-link"
                   >
                     <svg class="barbers-social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
@@ -555,10 +577,11 @@
                 </li>
                 <li>
                   <a
-                    class="barbers-social-link"
                     href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label="Linkedin profile of a barber"
+                    class="barbers-social-link"
                   >
                     <svg class="barbers-social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
@@ -633,10 +656,11 @@
               <ul class="barbers-social-list">
                 <li>
                   <a
-                    class="barbers-social-link"
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label="Instagram profile of a barber"
+                    class="barbers-social-link"
                   >
                     <svg class="barbers-social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -645,10 +669,11 @@
                 </li>
                 <li>
                   <a
-                    class="barbers-social-link"
                     href="https://twitter.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label="Twitter profile of a barber"
+                    class="barbers-social-link"
                   >
                     <svg class="barbers-social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
@@ -657,10 +682,11 @@
                 </li>
                 <li>
                   <a
-                    class="barbers-social-link"
                     href="https://www.facebook.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label="Facebook profile of a barber"
+                    class="barbers-social-link"
                   >
                     <svg class="barbers-social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
@@ -669,10 +695,11 @@
                 </li>
                 <li>
                   <a
-                    class="barbers-social-link"
                     href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label="Linkedin profile of a barber"
+                    class="barbers-social-link"
                   >
                     <svg class="barbers-social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
@@ -685,7 +712,7 @@
         </div>
       </section>
 
-      <!-- ---------------- GALLERY ---------------- -->
+      <!-- GALLERY -->
       <section class="section">
         <div class="container">
           <p class="section-top-text gallery-top-text">
@@ -930,7 +957,7 @@
       </section>
 
       <div class="section-wrap">
-        <!-- ---------------- BOOKING ---------------- -->
+        <!-- BOOKING -->
         <section id="booking" class="dark-theme-text booking">
           <div class="booking-container js-booking-container">
             <h2 class="section-title booking-title">Online-booking</h2>
@@ -974,8 +1001,9 @@
               </label>
 
               <button
-                class="button dark-theme-text booking-form-btn"
                 type="submit"
+                aria-label="Submit booking form"
+                class="button dark-theme-text booking-form-btn"
               >
                 Send
               </button>
@@ -983,7 +1011,7 @@
           </div>
         </section>
 
-        <!-- ---------------- CONTACTS ---------------- -->
+        <!-- CONTACTS -->
         <section class="contacts" id="contacts">
           <div class="contacts-container">
             <h2 class="section-title contacts-title dark-theme-text">
@@ -995,10 +1023,11 @@
                 <ul>
                   <li class="contacts-address-item">
                     <a
-                      class="contacts-location contacts-address-link"
                       href="https://maps.app.goo.gl/s27bV71qkcTqbbwT8"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
+                      aria-label="View location on Google Maps"
+                      class="contacts-location contacts-address-link"
                     >
                       <svg class="contacts-address-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-location"></use>
@@ -1009,7 +1038,7 @@
                   </li>
 
                   <li class="contacts-address-item">
-                    <a class="contacts-address-link" href="tel:+380441111111">
+                    <a href="tel:+380441111111" class="contacts-address-link">
                       <svg class="contacts-address-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-phone"></use>
                       </svg>
@@ -1019,8 +1048,8 @@
 
                   <li class="contacts-address-item">
                     <a
-                      class="contacts-address-link"
                       href="mailto:barbershop@email.com"
+                      class="contacts-address-link"
                     >
                       <svg class="contacts-address-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-mail"></use>
@@ -1043,7 +1072,7 @@
       </div>
     </main>
 
-    <!-- ---------------- FOOTER ---------------- -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
@@ -1051,20 +1080,20 @@
         <ul class="list-links">
           <li>
             <a
-              class="active-link"
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer nofollow"
+              class="active-link"
               >Instagram</a
             >
           </li>
 
           <li>
             <a
-              class="active-link"
               href="https://www.youtube.com/"
               target="_blank"
               rel="noopener noreferrer nofollow"
+              class="active-link"
               >Youtube</a
             >
           </li>
@@ -1072,11 +1101,12 @@
       </div>
     </footer>
 
-    <!-- ---------------- MOBILE-MENU ---------------- -->
+    <!-- MOBILE-MENU -->
     <div class="mobile-menu is-hidden js-mobile-menu">
       <div class="mobile-menu-container">
         <button
           type="button"
+          aria-label="Close mobile menu"
           class="mobile-menu-btn mobile-menu-btn-close js-close-mobile-menu-btn"
         >
           <svg class="btn-menu-icon" width="19" height="19">
@@ -1100,8 +1130,8 @@
         </ul>
 
         <a
-          class="header-tel active-link mobile-menu-tel"
           href="tel:+380441111111"
+          class="header-tel active-link mobile-menu-tel"
           >+38 044 111 11 11</a
         >
 
@@ -1115,19 +1145,19 @@
         <ul class="mobile-list-links">
           <li class="mobile-list-links-item">
             <a
-              class="active-link"
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer nofollow"
+              class="active-link"
               >Instagram</a
             >
           </li>
           <li class="mobile-list-links-item">
             <a
-              class="active-link"
               href="https://www.youtube.com/"
               target="_blank"
               rel="noopener noreferrer nofollow"
+              class="active-link"
               >Youtube</a
             >
           </li>
@@ -1135,11 +1165,12 @@
       </div>
     </div>
 
-    <!-- ---------------- MODAL-WINDOW ---------------- -->
+    <!-- MODAL-WINDOW -->
     <div class="modal-window is-hidden js-modal-window">
       <div class="modal-window-container">
         <button
           type="button"
+          aria-label="Close modal window"
           class="modal-window-btn-close js-close-modal-window-btn"
         >
           <svg class="btn-menu-icon" width="19" height="19">
@@ -1149,11 +1180,17 @@
 
         <p class="modal-window-text js-modal-window-text"></p>
 
-        <button class="button js-modal-window-ok-btn" type="button">Ok</button>
+        <button
+          type="button"
+          aria-label="Close success message"
+          class="button js-modal-window-ok-btn"
+        >
+          Ok
+        </button>
       </div>
     </div>
 
-    <!-- ---------------- SCRIPTS ---------------- -->
+    <!-- SCRIPTS -->
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./js/main.js"></script>
