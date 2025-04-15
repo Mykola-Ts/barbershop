@@ -1,3 +1,28 @@
+export const swiperParameters = {
+  direction: "horizontal",
+  loop: true,
+
+  autoplay: {
+    delay: 7000,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+};
+
+export function initSwiper(swiper, swiperContainer, parameters) {
+  if (!swiper && window.innerWidth >= 768) {
+    return (swiper = new Swiper(swiperContainer, parameters));
+  } else return null;
+}
+
 export const validatorNameRule = [
   { rule: "required", errorMessage: "The name is required." },
   {

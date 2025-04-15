@@ -22,6 +22,12 @@
   .container {
     width: var(--container-width-mobile);
   }
+
+  /* ---------------- GALLERY ---------------- */
+
+  .gallery-list-item {
+    height: 360px;
+  }
 }
 
 /* ----------------MAX-WIDTH: 767px---------------- */

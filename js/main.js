@@ -1,15 +1,19 @@
 import { handlerSubmitBookingForm } from "./eventHandlersBooking.js";
 import { handlerOpenMobileMenu } from "./eventHandlersMobileMenu.js";
 import {
+  initSwiper,
+  swiperParameters,
   validatorMessageRule,
   validatorNameRule,
   validatorPhoneRule,
-} from "./validatorRules.js";
+} from "./helpers.js";
 
 const selectors = {
   openMobileMenuBtn: document.querySelector(".js-open-mobile-menu-btn"),
   bookingForm: document.querySelector(".js-booking-form"),
 };
+
+// Form validator
 const validator = new JustValidate(selectors.bookingForm);
 
 validator
@@ -18,19 +22,18 @@ validator
   .addField("#message", validatorMessageRule)
   .onSuccess(handlerSubmitBookingForm);
 
+// Mobile menu
 selectors.openMobileMenuBtn.addEventListener("click", handlerOpenMobileMenu);
 
-const swiper = new Swiper(".swiper", {
-  direction: "horizontal",
-  loop: true,
+// Swiper
+let swiper = null;
 
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+swiper = initSwiper(swiper, ".swiper", swiperParameters);
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+window.addEventListener("resize", handleResizeWindow);
+
+function handleResizeWindow() {
+  if (swiper) return window.removeEventListener("resize", handleResizeWindow);
+
+  swiper = initSwiper(swiper, ".swiper", swiperParameters);
+}
