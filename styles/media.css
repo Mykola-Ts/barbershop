@@ -607,6 +607,15 @@
   .mobile-menu {
     display: none;
   }
+
+  /* ---------------- SCROLL-TO-TOP ---------------- */
+
+  .scroll-to-top-btn {
+    bottom: 80px;
+
+    width: 56px;
+    height: 56px;
+  }
 }
 
 /* ----------------MIN-WIDTH: 768px and MAX-WIDTH: 1199px---------------- */
@@ -985,5 +994,11 @@
 
   .contacts-address {
     margin-bottom: 70px;
+  }
+
+  /* ---------------- SCROLL-TO-TOP ---------------- */
+
+  .scroll-to-top-btn {
+    bottom: 60px;
   }
 }

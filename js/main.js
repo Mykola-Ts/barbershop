@@ -1,6 +1,10 @@
 import { handlerSubmitBookingForm } from "./eventHandlersBooking.js";
 import { handlerOpenMobileMenu } from "./eventHandlersMobileMenu.js";
 import {
+  handlerScrollToTop,
+  handlerShowBtnScrollToTop,
+} from "./eventHandlersScrollToTop.js";
+import {
   initSwiper,
   swiperParameters,
   validatorMessageRule,
@@ -11,6 +15,7 @@ import {
 const selectors = {
   openMobileMenuBtn: document.querySelector(".js-open-mobile-menu-btn"),
   bookingForm: document.querySelector(".js-booking-form"),
+  scrollToTopBtn: document.querySelector(".js-scroll-to-top-btn"),
 };
 
 // Form validator
@@ -37,3 +42,9 @@ function handleResizeWindow() {
 
   swiper = initSwiper(swiper, ".swiper", swiperParameters);
 }
+
+// Scroll to top
+handlerShowBtnScrollToTop();
+
+window.addEventListener("scroll", handlerShowBtnScrollToTop);
+selectors.scrollToTopBtn.addEventListener("click", handlerScrollToTop);
