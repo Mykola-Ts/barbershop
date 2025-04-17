@@ -1,0 +1,110 @@
+.about-wrap-title {
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.about-bottom-text {
+  margin-bottom: 20px;
+}
+
+.about-bottom-text-item {
+  display: none;
+}
+
+.about-text {
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+
+/* ----------------MAX-WIDTH: 767px---------------- */
+
+@media screen and (max-width: 767px) {
+  .about-img-list {
+    display: none;
+  }
+
+  .about-wrap-title {
+    max-width: 306px;
+  }
+}
+
+/* ----------------MIN-WIDTH: 768px---------------- */
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    display: flex;
+    gap: 30px;
+  }
+
+  .about-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-shrink: 0;
+  }
+
+  .about-img-list-item {
+    display: block;
+
+    height: 236px;
+  }
+
+  .about-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-text {
+    margin-bottom: auto;
+  }
+
+  .about-booking-btn {
+    align-self: start;
+  }
+}
+
+/* ----------------MIN-WIDTH: 768px and MAX-WIDTH: 1199px---------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about-img-list {
+    width: 330px;
+  }
+
+  .about-img-list img {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* ----------------MIN-WIDTH: 1200px---------------- */
+
+@media screen and (min-width: 1200px) {
+  .about-img-list {
+    flex-direction: row;
+  }
+
+  .about-img-list-item {
+    height: 444px;
+  }
+
+  .about-wrap {
+    padding-right: 100px;
+  }
+
+  .about-wrap-title {
+    font-size: 42px;
+    letter-spacing: 0.05em;
+  }
+
+  .about-text {
+    margin-bottom: 42px;
+  }
+
+  .about-bottom-text-item {
+    display: inline;
+  }
+}

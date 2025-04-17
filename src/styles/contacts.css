@@ -1,0 +1,205 @@
+.contacts {
+  padding: var(--container-vertical-padding-mobile)
+    var(--container-side-padding-mobile);
+
+  letter-spacing: 0.02em;
+
+  color: var(--text-gray-color);
+  background-image: url(../images/contacts/contacts-background-mobile.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+@supports (
+  background-image: url('../images/contacts/contacts-background-mobile.webp')
+) {
+  .contacts {
+    background-image: url(../images/contacts/contacts-background-mobile.webp);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../images/contacts/contacts-background@2x-mobile.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  @supports (
+    background-image:
+      url('../images/contacts/contacts-background@2x-mobile.webp')
+  ) {
+    .contacts {
+      background-image: url(../images/contacts/contacts-background@2x-mobile.webp);
+    }
+  }
+}
+
+.contacts-title {
+  margin-bottom: 40px;
+}
+
+.contacts-address {
+  margin-bottom: 44px;
+}
+
+.contacts-address-item,
+.contacts-working-hours {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.contacts-address-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-address-link:is(:hover, :focus) {
+  text-decoration: underline;
+}
+
+.contacts-address-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contacts-address-icon {
+  fill: transparent;
+  stroke: currentColor;
+}
+
+.contacts-location .contacts-address-icon {
+  transform: translateY(-50%);
+}
+
+.contacts-location {
+  font-weight: 700;
+}
+
+.contacts .section-top-text::before {
+  background-color: var(--text-gray-color);
+}
+
+/* ----------------MAX-WIDTH: 767px---------------- */
+
+@media screen and (max-width: 767px) {
+  .contacts-title {
+    text-align: center;
+  }
+
+  .contacts-address-break {
+    display: none;
+  }
+}
+
+/* ----------------MIN-WIDTH: 768px---------------- */
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding: var(--container-vertical-padding-tablet)
+      var(--container-side-padding-tablet);
+
+    background-image: url(../images/contacts/contacts-background-tablet.png);
+  }
+
+  @supports (
+    background-image: url('../images/contacts/contacts-background-tablet.webp')
+  ) {
+    .contacts {
+      background-image: url(../images/contacts/contacts-background-tablet.webp);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .contacts {
+      background-image: url(../images/contacts/contacts-background@2x-tablet.png);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @supports (
+      background-image:
+        url('../images/contacts/contacts-background@2x-tablet.webp')
+    ) {
+      .contacts {
+        background-image: url(../images/contacts/contacts-background@2x-tablet.webp);
+      }
+    }
+  }
+
+  .contacts-address {
+    margin-bottom: 0;
+  }
+}
+
+/* ----------------MIN-WIDTH: 768px and MAX-WIDTH: 1199px---------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-wrap {
+    display: flex;
+    gap: 30px;
+  }
+
+  .contacts-address,
+  .contacts-working-wrap {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+/* ----------------MIN-WIDTH: 1200px---------------- */
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    width: calc(
+      (
+          var(--container-width-desktop) - var(--container-side-padding-desktop) *
+            2
+        ) / 2
+    );
+    padding: 130px 100px var(--container-vertical-padding-desktop);
+
+    background-image: url(../images/contacts/contacts-background.png);
+  }
+
+  @supports (
+    background-image: url('../images/contacts/contacts-background.webp')
+  ) {
+    .contacts {
+      background-image: url(../images/contacts/contacts-background.webp);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .contacts {
+      background-image: url(../images/contacts/contacts-background@2x.png);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @supports (
+      background-image: url('../images/contacts/contacts-background@2x.webp')
+    ) {
+      .contacts {
+        background-image: url(../images/contacts/contacts-background@2x.webp);
+      }
+    }
+  }
+
+  .contacts-address {
+    margin-bottom: 70px;
+  }
+}

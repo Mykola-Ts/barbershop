@@ -1,0 +1,52 @@
+<section id="booking" class="dark-theme-text booking">
+  <div class="booking-container js-booking-container">
+    <h2 class="section-title booking-title">Online-booking</h2>
+
+    <form class="booking-form js-booking-form">
+      <div class="booking-inputs-wrap">
+        <label class="booking-input-label">
+          <span class="booking-message-label-text">Name*</span>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder=""
+            required
+            class="booking-input"
+          />
+        </label>
+        <label class="booking-input-label">
+          <span class="booking-message-label-text">Phone*</span>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder=""
+            required
+            class="booking-input"
+          />
+        </label>
+      </div>
+
+      <label class="booking-message-label">
+        <span class="booking-message-label-text">Message</span>
+        <textarea
+          id="message"
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder=""
+          class="booking-message booking-input"
+        ></textarea>
+      </label>
+
+      <button
+        type="submit"
+        aria-label="Submit booking form"
+        class="button dark-theme-text booking-form-btn"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</section>

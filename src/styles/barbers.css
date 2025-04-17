@@ -1,0 +1,97 @@
+.barbers {
+  max-width: var(--section-max-width);
+  margin: 0 auto;
+
+  background-color: var(--background-color-light);
+}
+
+.barbers-title {
+  margin-bottom: 44px;
+}
+
+.barbers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.barbers-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.barbers-item-img-wrap {
+  height: 346px;
+  margin-bottom: 30px;
+}
+
+.barbers-item-img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.barbers-item-name {
+  margin-bottom: 8px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.barbers-item-text {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  color: var(--accent-color);
+}
+
+.barbers-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: var(--text-black-color);
+  background-color: var(--text-white-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.barbers-social-link:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+
+.barbers-social-icon {
+  fill: currentColor;
+}
+
+/* ----------------MIN-WIDTH: 768px and MAX-WIDTH: 1199px---------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .barbers-container {
+    width: 450px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ----------------MIN-WIDTH: 1200px---------------- */
+
+@media screen and (min-width: 1200px) {
+  .barbers-list {
+    flex-direction: row;
+    gap: 30px;
+  }
+}

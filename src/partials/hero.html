@@ -1,0 +1,109 @@
+<section>
+  <div class="container hero-container">
+    <div class="hero-links-wrap">
+      <ul class="hero-links-list list-links">
+        <li>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="active-link"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="active-link"
+            >Youtube</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="hero-wrap">
+      <picture>
+        <source
+          srcset="
+            ./images/hero/hero-background.webp    1x,
+            ./images/hero/hero-background@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero/hero-background.jpg    1x,
+            ./images/hero/hero-background@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero/hero-background-tablet.webp    1x,
+            ./images/hero/hero-background-tablet@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/hero/hero-background-tablet.jpg    1x,
+            ./images/hero/hero-background-tablet@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/hero/hero-background-mobile.webp    1x,
+            ./images/hero/hero-background-mobile@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/hero/hero-background-mobile.jpg    1x,
+            ./images/hero/hero-background-mobile@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <img
+          src="./images/hero/hero-background-mobile.jpg"
+          alt="hero background"
+          aria-hidden="true"
+          decoding="async"
+          fetchpriority="high"
+          style="position: absolute; width: 1px; height: 1px; opacity: 0"
+        />
+      </picture>
+
+      <div class="hero-content">
+        <p class="section-top-text">A hair salon for men in Kyiv</p>
+        <h1 class="hero-title dark-theme-text">BarberShop</h1>
+        <p class="section-bottom-text hero-bottom-text">
+          We are experts in trendy men’s haircuts. We work quickly, carefully
+          and with style.
+        </p>
+      </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide-1"></div>
+          <div class="swiper-slide swiper-slide-2"></div>
+          <div class="swiper-slide swiper-slide-3"></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-buttons">
+          <div class="swiper-button-prev">Back</div>
+          <div class="swiper-button-next">Forward</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

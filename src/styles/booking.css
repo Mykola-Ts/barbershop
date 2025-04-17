@@ -1,0 +1,134 @@
+.booking {
+  padding: var(--container-vertical-padding-mobile)
+    var(--container-side-padding-mobile);
+
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.01em;
+}
+
+.booking-title {
+  margin-bottom: 44px;
+}
+
+.booking-form {
+  margin-left: auto;
+
+  text-transform: uppercase;
+
+  color: var(--text-gray-color-with-transparency);
+}
+
+.booking-inputs-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+
+  margin-bottom: 44px;
+}
+
+.booking-message-label-text {
+  position: absolute;
+
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.booking-message-label-text:has(+ .booking-input:focus),
+.booking-message-label-text:has(+ .booking-input:not(:placeholder-shown)) {
+  transform: translateY(calc(-1 * (100% + 4px)));
+}
+
+.booking-input {
+  display: block;
+
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 8px;
+
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+
+  color: currentColor;
+  background-color: transparent;
+  outline: transparent;
+}
+
+.booking-input-label:has(> .booking-input:focus),
+.booking-message-label:has(> .booking-input:focus) {
+  color: var(--text-white-color);
+}
+
+.booking-message-label {
+  display: block;
+
+  margin-bottom: 44px;
+}
+
+.booking-message {
+  width: 100%;
+  height: 76px;
+
+  resize: none;
+}
+
+/* ----------------MAX-WIDTH: 767px---------------- */
+
+@media screen and (max-width: 767px) {
+  .booking-title {
+    text-align: center;
+  }
+
+  .booking-form-btn {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ----------------MIN-WIDTH: 768px---------------- */
+
+@media screen and (min-width: 768px) {
+  .booking {
+    padding: var(--container-vertical-padding-tablet)
+      var(--container-side-padding-tablet);
+  }
+
+  .booking-inputs-wrap {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .booking-input-label {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+/* ----------------MIN-WIDTH: 1200px---------------- */
+
+@media screen and (min-width: 1200px) {
+  .booking {
+    width: calc(
+      (
+          var(--container-width-desktop) - var(--container-side-padding-desktop) *
+            2
+        ) / 2
+    );
+  }
+
+  .booking {
+    display: flex;
+    flex-shrink: 0;
+
+    padding: 130px 30px var(--container-vertical-padding-desktop)
+      var(--container-side-padding-desktop);
+  }
+
+  .booking-container {
+    width: 100%;
+  }
+}

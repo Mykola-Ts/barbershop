@@ -1,0 +1,102 @@
+.mobile-menu-container {
+  position: relative;
+
+  transform: translateX(0);
+
+  width: 336px;
+  height: 100vh;
+  padding: 118px 40px;
+  margin-left: auto;
+
+  background-color: var(--text-white-color);
+
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.mobile-menu.is-hidden .mobile-menu-container {
+  transform: translateX(100%);
+}
+
+.mobile-menu-nav-list {
+  margin-bottom: 64px;
+
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.mobile-menu-nav-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.mobile-menu-nav-item a {
+  display: block;
+
+  width: 100%;
+}
+
+.mobile-menu-tel {
+  display: block;
+
+  margin-bottom: 24px;
+
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.mobile-menu-booking-btn {
+  min-width: 194px;
+  margin-bottom: 64px;
+}
+
+.mobile-list-links-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.mobile-list-links-item:first-child {
+  margin-bottom: 24px;
+}
+
+.mobile-list-links-item:first-child:before {
+  content: '';
+
+  display: block;
+
+  width: 60px;
+  height: 1px;
+
+  background-color: currentColor;
+}
+
+.mobile-list-links-item:not(:first-child) {
+  margin-left: 100px;
+}
+
+.mobile-menu-btn-close {
+  position: absolute;
+  top: 60px;
+  right: 42px;
+
+  color: var(--text-black-color);
+}
+
+.mobile-menu-btn-close {
+  top: 60px;
+  right: 42px;
+}
+
+/* ----------------MIN-WIDTH: 768px---------------- */
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
