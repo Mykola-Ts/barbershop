@@ -289,10 +289,15 @@
 
     color: currentColor;
     background-color: transparent;
+    opacity: 0.2;
+
+    transition: opacity var(--transition-duration)
+      var(--transition-timing-function);
   }
 
+  .swiper-pagination-bullet:is(:hover, :focus),
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    color: var(--text-white-color);
+    opacity: 1;
   }
 
   .swiper-pagination-bullet::after {
@@ -337,6 +342,14 @@
     letter-spacing: 0.1em;
 
     color: currentColor;
+
+    transition: color var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  .swiper-button-prev:is(:hover, :focus),
+  .swiper-button-next:is(:hover, :focus) {
+    color: var(--accent-color);
   }
 
   .swiper-button-prev::after,

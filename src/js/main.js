@@ -1,4 +1,5 @@
 import JustValidate from 'just-validate';
+import throttle from 'lodash.throttle';
 import { handlerSubmitBookingForm } from './eventHandlersBooking.js';
 import { handlerOpenMobileMenu } from './eventHandlersMobileMenu.js';
 import {
@@ -46,5 +47,5 @@ function handleResizeWindow() {
 // Scroll to top
 handlerShowBtnScrollToTop();
 
-window.addEventListener('scroll', handlerShowBtnScrollToTop);
+window.addEventListener('scroll', throttle(handlerShowBtnScrollToTop, 200));
 selectors.scrollToTopBtn.addEventListener('click', handlerScrollToTop);

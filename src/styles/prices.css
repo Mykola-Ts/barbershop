@@ -70,12 +70,19 @@
   align-items: baseline;
   gap: 12px;
 
+  max-width: 100%;
+
   font-size: 14px;
   line-height: 1.43;
 }
 
+.prices-list-item p:first-child {
+  max-width: 60%;
+}
+
 .prices-list-item:not(:last-child) {
   margin-bottom: 20px;
+  word-break: break-word;
 }
 
 .prices-list-item p:first-child {
@@ -87,7 +94,7 @@
 
   flex-grow: 1;
 
-  width: 100px;
+  width: 8px;
   height: 1px;
 
   background-color: rgba(157, 164, 189, 0.12);
@@ -151,6 +158,10 @@
   .prices-list-item {
     font-size: 18px;
     line-height: 1.67;
+  }
+
+  .prices-list-item p:first-child {
+    max-width: 70%;
   }
 
   .prices-title {
