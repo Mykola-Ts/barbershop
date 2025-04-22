@@ -38,6 +38,14 @@ swiper = initSwiper(swiper, '.swiper', swiperParameters);
 
 window.addEventListener('resize', handleResizeWindow);
 
+/**
+ * Handles window resize to initialize Swiper if it hasn't been initialized yet.
+ *
+ * If Swiper is not yet initialized, calls the 'initSwiper' function and assigns the instance to the 'swiper' variable.
+ *
+ * If Swiper is already initialized, removes the resize event listener to prevent redundant calls.
+ */
+
 function handleResizeWindow() {
   if (swiper) return window.removeEventListener('resize', handleResizeWindow);
 

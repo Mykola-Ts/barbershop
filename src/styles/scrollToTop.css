@@ -1,7 +1,7 @@
 .scroll-to-top-btn {
   position: fixed;
   bottom: 28px;
-  right: 8px;
+  right: 12px;
   transform: scale(1);
 
   display: flex;

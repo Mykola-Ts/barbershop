@@ -233,7 +233,6 @@ body.modal-window-open {
   padding: 0px;
   margin-left: auto;
 
-  color: var(--text-white-color);
   background-color: transparent;
 
   transition: color var(--transition-duration) var(--transition-timing-function);

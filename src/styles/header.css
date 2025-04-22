@@ -46,6 +46,10 @@
   display: none;
 }
 
+.open-mobile-menu-btn {
+  color: var(--text-white-color);
+}
+
 .btn-menu-icon {
   fill: currentColor;
 }
