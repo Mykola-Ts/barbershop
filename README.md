@@ -23,6 +23,8 @@ beard grooming, and high-quality service in a trendy atmosphere.
 
 - [PageSpeed Results](#-pagespeed-results)
 
+- [Validation Result](#-validation-result)
+
 - [Installation & Setup](#-installation--setup)
 
 - [Author](#-author)
@@ -54,14 +56,14 @@ The site consists of the following main sections:
 
 ## 🔗 Useful Links
 
-[Live Demo](https://mykola-ts.github.io/barbershop/) — deployed version of the
-website
+- [Live Demo](https://mykola-ts.github.io/barbershop/) — deployed version of the
+  website
 
-[GitHub Repository](https://github.com/Mykola-Ts/barbershop) — deployed version
-of the website
+- [GitHub Repository](https://github.com/Mykola-Ts/barbershop) — deployed
+  version of the website
 
-[Figma Design](https://www.figma.com/design/Y8K8PkHnfTXRIkZVdVhVfF/Barbershop-EN--Copy---Copy-?t=0bfgpMEvuiYvjqPZ-0)
-— the project’s UI/UX design mockup
+- [Figma Design](https://www.figma.com/design/Y8K8PkHnfTXRIkZVdVhVfF/Barbershop-EN--Copy---Copy-?t=0bfgpMEvuiYvjqPZ-0)
+  — the project’s UI/UX design mockup
 
 ## 🛠 Technologies Used
 
@@ -69,37 +71,49 @@ of the website
 - CSS3
 - JavaScript (ES6+)
 - Vite — modern frontend build tool
+- Git / GitHub
 
 ## 📦 Libraries Used
 
-- [Swiper.js](https://swiperjs.com/) — responsive, touch-friendly sliders
-- [JustValidate](https://just-validate.dev/) — form validation
+- [vite](https://vite.dev/) - next generation frontend tooling (dev server &
+  build tool)
+- [glob](https://www.npmjs.com/package/glob) - file path pattern matching (used
+  for dynamic input in builds)
+- [just-validate](https://just-validate.dev/) — form validation
 - [lodash.throttle](https://lodash.com/docs/#throttle) — performance
-  optimization for scroll events
 - [modern-normalize](https://github.com/sindresorhus/modern-normalize) — CSS
-  normalization
+  normalization to make built-in browser styling consistent
+- [swiper](https://swiperjs.com/) — responsive, touch-friendly sliders
+  optimization for scroll events
 - [vite-plugin-full-reload](https://www.npmjs.com/package/vite-plugin-full-reload)
-  — hot reload for Vite
+  — hot reload for HTML and other non-JS files in Vite
 - [vite-plugin-html-inject](https://www.npmjs.com/package/vite-plugin-html-inject)
-  — inject HTML variables during build
+  — inject variables or partials into HTML at build time
 
 ## 📁 Folder and File Structure
 
 - **.github/**: GitHub-specific configuration and workflows.
 
-- **fonts/**: Custom fonts used in the project.
+- **assets/**: Folder stores images used in the README.md file to visually
+  document and represent the project.
 
-- **images/**: Folder for images and icons used throughout the site.
+- **src/**: Folder contains the source code of the application, including all
+  essential files such as HTML, CSS, JavaScript, and component logic used to
+  build and structure the project:
 
-- **js/**: Contains JavaScript files for functionality.
+  - **fonts/**: Custom fonts used in the project.
 
-- **partials/**: HTML partials for each section of the site.
+  - **images/**: Folder for images and icons used throughout the site.
 
-- **public/**: Static assets for Vite (e.g., images, favicons, etc.).
+  - **js/**: Contains JavaScript files for functionality.
 
-- **styles/**: CSS files for each section of the site.
+  - **partials/**: HTML partials for each section of the site.
 
-- **index.html**: The main HTML file for the site.
+  - **public/**: Static assets for Vite (e.g., images, favicons, etc.).
+
+  - **styles/**: CSS files for each section of the site.
+
+  - **index.html**: The main HTML file for the site.
 
 - **.editorconfig**: Editor configuration file.
 
@@ -107,9 +121,9 @@ of the website
 
 - **.prettierrc.json**: Prettier configuration for code formatting.
 
-- **README.md**: Project documentation and setup instructions.
-
 - **package.json**: Contains metadata about the project and dependencies.
+
+- **README.md**: Project documentation and setup instructions.
 
 - **vite.config.js**: Configuration file for Vite.
 
@@ -136,8 +150,9 @@ of the website
   in a modal window with Escape and backdrop closing support.
 
 - **Scroll to Top Button**  
-  Appears when scrolling up or near the bottom of the page for quick navigation
-  back to the top.
+  Enhances navigation and usability, especially on long or content-heavy pages.
+  Appears when scrolling down and allows users to quickly return to the top of
+  the page.
 
 - **Swiper Slider Integration**  
   Image slider implemented using Swiper.js with adaptive behavior depending on
@@ -150,8 +165,10 @@ of the website
 - **Clean & Modular Code**  
   Code is split into logical modules.
 
-- **Lightweight & Fast**  
-  Optimized for performance with lazy-loaded scripts and minimal CSS overhead.
+- **Performance & Accessibility**  
+  The website achieves high performance, accessibility, best practices, and SEO
+  standards. Optimized code and structure ensure fast loading, smooth
+  interactions, and an inclusive, user-friendly experience across all devices.
 
 ## 🚀 PageSpeed Results
 
@@ -169,6 +186,14 @@ strong performance across various categories, ensuring a smooth user experience.
 
 These results demonstrate that the website is optimized for both performance and
 user experience, ensuring fast loading times and high usability on all devices.
+
+## ✅ Validation Result
+
+The website has been tested with the
+[W3C Markup Validation Service](https://validator.w3.org/) and contains no
+validation errors or warnings.
+
+![Validation](./assets/validation-result.jpg)
 
 ## 🏗 Installation & Setup
 
