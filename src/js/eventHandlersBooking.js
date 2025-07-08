@@ -1,5 +1,5 @@
 const selectors = {
-  body: document.querySelector('body'),
+  body: document.body,
   modalWindow: document.querySelector('.js-modal-window'),
   modalWindowText: document.querySelector('.js-modal-window-text'),
   closeModalWindowBtn: document.querySelector('.js-close-modal-window-btn'),

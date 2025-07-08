@@ -1,5 +1,5 @@
 const selectors = {
-  body: document.querySelector('body'),
+  body: document.body,
   mobileMenu: document.querySelector('.js-mobile-menu'),
   closeMobileMenuBtn: document.querySelector('.js-close-mobile-menu-btn'),
   mobileMenuNavList: document.querySelector('.js-mobile-menu-nav-list'),
