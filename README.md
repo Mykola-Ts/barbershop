@@ -59,8 +59,8 @@ The site consists of the following main sections:
 - [Live Demo](https://mykola-ts.github.io/barbershop/) — deployed version of the
   website
 
-- [GitHub Repository](https://github.com/Mykola-Ts/barbershop) — deployed
-  version of the website
+- [GitHub Repository](https://github.com/Mykola-Ts/barbershop) — source code of
+  the project
 
 - [Figma Design](https://www.figma.com/design/Y8K8PkHnfTXRIkZVdVhVfF/Barbershop-EN--Copy---Copy-?t=0bfgpMEvuiYvjqPZ-0)
   — the project’s UI/UX design mockup
