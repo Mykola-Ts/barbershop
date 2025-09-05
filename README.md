@@ -1,6 +1,6 @@
 # 💈 BarberShop
 
-BarberShop is a modern men’s hair salon in Kyiv. We offer stylish haircuts,
+**BarberShop** is a modern men’s hair salon in Kyiv. We offer stylish haircuts,
 beard grooming, and high-quality service in a trendy atmosphere.
 
 ![Brand logo](./assets/logo.jpg)
@@ -8,25 +8,15 @@ beard grooming, and high-quality service in a trendy atmosphere.
 ## 📑 Table of Contents
 
 - [About the Project](#-about-the-project)
-
 - [Website Structure](#-website-structure)
-
 - [Useful Links](#-useful-links)
-
 - [Technologies Used](#-technologies-used)
-
 - [Libraries Used](#-libraries-used)
-
 - [Folder and File Structure](#-folder-and-file-structure)
-
 - [Features](#-features)
-
 - [PageSpeed Results](#-pagespeed-results)
-
 - [Validation Result](#-validation-result)
-
 - [Installation & Setup](#-installation--setup)
-
 - [Author](#-author)
 
 ## 📝 About the Project
@@ -37,21 +27,30 @@ salon in a modern, user-friendly format.
 
 ![Website start page](./assets/barbershop.jpg)
 
-### 🧩 Website Structure
+## 🧩 Website Structure
 
 The site consists of the following main sections:
 
 - **Header** — includes a navigation menu, a prominent phone number, and an
   online booking button for easy access to appointments;
+
 - **Hero** — an eye-catching section with a dynamic background image slider that
   includes the salon's name and a brief description;
+
 - **About** — information about the philosophy and values of the barbershop;
+
 - **Prices** — service pricing in a structured format;
+
 - **Benefits** — reasons to choose this barbershop;
+
 - **Barbers** — introduction of the team with photos and names;
+
 - **Gallery** — images showing the interior and work;
+
 - **Booking** — online appointment form with validation and confirmation modal;
+
 - **Contacts** — location, contact information, and working hours;
+
 - **Footer** — additional navigation and legal information.
 
 ## 🔗 Useful Links
@@ -76,54 +75,54 @@ The site consists of the following main sections:
 ## 📦 Libraries Used
 
 - [vite](https://vite.dev/) - next generation frontend tooling (dev server &
-  build tool)
+  build tool);
 - [glob](https://www.npmjs.com/package/glob) - file path pattern matching (used
-  for dynamic input in builds)
-- [just-validate](https://just-validate.dev/) — form validation
-- [lodash.throttle](https://lodash.com/docs/#throttle) — performance
+  for dynamic input in builds);
+- [just-validate](https://just-validate.dev/) — form validation;
+- [lodash.throttle](https://lodash.com/docs/#throttle) — performance;
 - [modern-normalize](https://github.com/sindresorhus/modern-normalize) — CSS
-  normalization to make built-in browser styling consistent
+  normalization to make built-in browser styling consistent;
 - [swiper](https://swiperjs.com/) — responsive, touch-friendly sliders
-  optimization for scroll events
+  optimization for scroll events;
 - [vite-plugin-full-reload](https://www.npmjs.com/package/vite-plugin-full-reload)
-  — hot reload for HTML and other non-JS files in Vite
+  — hot reload for HTML and other non-JS files in Vite;
 - [vite-plugin-html-inject](https://www.npmjs.com/package/vite-plugin-html-inject)
-  — inject variables or partials into HTML at build time
+  — inject variables or partials into HTML at build time.
 
 ## 📁 Folder and File Structure
 
-- **.github/**: GitHub-specific configuration and workflows.
+- **.github/**: GitHub-specific configuration and workflows;
 
 - **assets/**: Folder stores images used in the README.md file to visually
-  document and represent the project.
+  document and represent the project;
 
 - **src/**: Folder contains the source code of the application, including all
   essential files such as HTML, CSS, JavaScript, and component logic used to
   build and structure the project:
 
-  - **fonts/**: Custom fonts used in the project.
+  - **fonts/**: Custom fonts used in the project;
 
-  - **images/**: Folder for images and icons used throughout the site.
+  - **images/**: Folder for images and icons used throughout the site;
 
-  - **js/**: Contains JavaScript files for functionality.
+  - **js/**: Contains JavaScript files for functionality;
 
-  - **partials/**: HTML partials for each section of the site.
+  - **partials/**: HTML partials for each section of the site;
 
-  - **public/**: Static assets for Vite (e.g., images, favicons, etc.).
+  - **public/**: Static assets for Vite (e.g., images, favicons, etc.);
 
-  - **styles/**: CSS files for each section of the site.
+  - **styles/**: CSS files for each section of the site;
 
   - **index.html**: The main HTML file for the site.
 
-- **.editorconfig**: Editor configuration file.
+- **.editorconfig**: Editor configuration file;
 
-- **.gitignore**: Specifies which files and directories to ignore in Git.
+- **.gitignore**: Specifies which files and directories to ignore in Git;
 
-- **.prettierrc.json**: Prettier configuration for code formatting.
+- **.prettierrc.json**: Prettier configuration for code formatting;
 
-- **package.json**: Contains metadata about the project and dependencies.
+- **package.json**: Contains metadata about the project and dependencies;
 
-- **README.md**: Project documentation and setup instructions.
+- **README.md**: Project documentation and setup instructions;
 
 - **vite.config.js**: Configuration file for Vite.
 
@@ -176,13 +175,13 @@ Google's PageSpeed Insights was used to analyze the performance of the
 BarberShop website on both mobile and desktop devices. The results highlight
 strong performance across various categories, ensuring a smooth user experience.
 
-**📱 Mobile Performance:**
+- **📱 Mobile Performance:**
 
-![Mobile Page Performance](./assets/page-speed-barbershop-mobile.jpg)
+  ![Mobile Page Performance](./assets/page-speed-barbershop-mobile.jpg)
 
-**💻 Desktop Performance:**
+- **💻 Desktop Performance:**
 
-![Desktop Page Performance](./assets/page-speed-barbershop-desktop.jpg)
+  ![Desktop Page Performance](./assets/page-speed-barbershop-desktop.jpg)
 
 These results demonstrate that the website is optimized for both performance and
 user experience, ensuring fast loading times and high usability on all devices.
@@ -218,7 +217,7 @@ To run the project locally, follow these steps:
 
 4. **Open in browser**
 
-Visit http://localhost:5173/ to view the project.
+   Visit http://localhost:5173/ to view the project.
 
 ## 👨‍💻 Author
 
